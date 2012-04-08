@@ -1,0 +1,62 @@
+
+	private void getHierarchy() {
+		// TODO Auto-generated method stub
+
+		Hierarchy hier = AWTHierarchy.getDefault();
+		HierarchyWriter hw = new HierarchyWriter(hier);
+		System.out.println("hier: " + hier);
+		File file = new File("a");
+		try {
+			hw.writeHierarchy(new FileWriter(file));
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		Collection<Component> roots = hier.getRoots();
+		printChilds(hier, roots, -2);
+
+	}
+
+	private void printChilds(Hierarchy hier, Collection<Component> roots,
+			int indent) {
+		// TODO Auto-generated method stub
+
+		Iterator it = roots.iterator();
+		while (it.hasNext()) {
+			Component root = (Component) it.next();
+			int count = indent + 4;
+			printNumBl("-", count);
+			System.out.println("> DETAIL: " + root);
+			if (!comList.contains(root)) {
+				comList.add(root);
+				if (root instanceof javax.swing.JButton) {
+					if (((javax.swing.JButton) root).getText().equals("µÇÂ¼")) {
+						System.out.println("say login");
+						JButtonTester tester = new JButtonTester();
+						tester.actionClick(root);
+						getHierarchy();
+					}
+					if (((javax.swing.JButton) root).getText().equals("ÍË³ö")) {
+						System.out.println("say exit");
+						JButtonTester tester = new JButtonTester();
+						tester.actionClick(root);
+						getHierarchy();
+					}
+				}
+			}
+			Collection<Component> subComs = hier.getComponents(root);
+			if (subComs.size() != 0) {
+				// System.out.println("child components" + subComs);
+				printChilds(hier, subComs, count);
+			}
+		}
+
+	}
+
+	public static void printNumBl(String indent, int num) {
+		StringBuffer sb = new StringBuffer();
+		for (int i = 0; i < num; i++) {
+			sb.append(indent);
+		}
+		System.out.print(sb);
+	}

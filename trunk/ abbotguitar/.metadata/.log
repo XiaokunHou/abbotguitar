@@ -1,0 +1,65 @@
+!SESSION 2012-04-02 22:47:30.975 -----------------------------------------------
+eclipse.buildId=
+java.version=1.6.0_20
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.equinox.p2.repository 4 0 2012-04-02 22:47:33.705
+!MESSAGE ProvisioningEventBus could not be obtained. Metadata caches may not be cleaned up properly.
+
+!ENTRY org.eclipse.jface 2 0 2012-04-02 22:52:45.409
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2012-04-02 22:52:45.409
+!MESSAGE A conflict occurred for ALT+CTRL+J:
+Binding(ALT+CTRL+J,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.text.join.lines,Join Lines,
+		Join lines of text,
+		Category(org.eclipse.ui.category.textEditor,Text Editing,Text Editing Commands,true),
+		LegacyHandlerWrapper(ActionHandler(action=org.eclipse.ui.texteditor.JoinLinesAction@1b88599)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+Binding(ALT+CTRL+J,
+	ParameterizedCommand(Command(com.cloudgarden.jigloo.commands.openJiglooPrefs,Open Jigloo Preferences Page,
+		Open Jigloo Preferences Page,
+		Category(com.cloudgarden.jigloo.actions.category,Jigloo,Jigloo Actions,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+
+!ENTRY org.eclipse.ui 4 4 2012-04-02 23:34:39.484
+!MESSAGE Referenced part does not exist yet: org.eclipse.ui.views.ProblemView.
+!SESSION 2012-04-04 15:47:39.223 -----------------------------------------------
+eclipse.buildId=
+java.version=1.6.0_20
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.equinox.p2.repository 4 0 2012-04-04 15:47:45.073
+!MESSAGE ProvisioningEventBus could not be obtained. Metadata caches may not be cleaned up properly.
+
+!ENTRY org.eclipse.jface 2 0 2012-04-04 15:48:09.175
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2012-04-04 15:48:09.175
+!MESSAGE A conflict occurred for ALT+CTRL+J:
+Binding(ALT+CTRL+J,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.text.join.lines,Join Lines,
+		Join lines of text,
+		Category(org.eclipse.ui.category.textEditor,Text Editing,Text Editing Commands,true),
+		LegacyHandlerWrapper(ActionHandler(action=org.eclipse.ui.texteditor.JoinLinesAction@100124f)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+Binding(ALT+CTRL+J,
+	ParameterizedCommand(Command(com.cloudgarden.jigloo.commands.openJiglooPrefs,Open Jigloo Preferences Page,
+		Open Jigloo Preferences Page,
+		Category(com.cloudgarden.jigloo.actions.category,Jigloo,Jigloo Actions,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)

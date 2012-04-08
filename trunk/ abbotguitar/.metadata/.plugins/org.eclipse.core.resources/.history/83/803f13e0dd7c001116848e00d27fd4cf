@@ -1,0 +1,82 @@
+package cn.edu.nju.software.ripperCore;
+
+import java.io.File;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.net.URLClassLoader;
+
+public class RipperMain {
+	public static void main(String args[]){
+		//define the launch info of the AUT
+		String path="C:\\Users\\huotuotuofly\\Desktop\\abbot-1.2.0\\lib\\costello.jar";
+		String mainClass="abbot.editor.ScriptEditor";
+		String mainMethod="main";
+		new RipperMain().ripper(path,mainClass,mainMethod);
+	}
+
+	@SuppressWarnings("static-access")
+	private void ripper(String path, String mainClass,String mainMethod) {
+		// TODO Auto-generated method stub
+		//dynamic include the jar file. And run it.
+		String arg[]=new String[]{};
+		//abbot.editor.ScriptEditor.main(arg);
+		//(new abbot.editor.ScriptEditor()).main(arg);
+		File jarFile=new File(path);
+		Class classToLoad=null;
+		Method method=null;
+		try {
+			URL[] url=new URL[]{jarFile.toURI().toURL()};
+			URLClassLoader child=new URLClassLoader(url, this.getClass().getClassLoader());
+			classToLoad=Class.forName(mainClass, true, child);
+			//Method method=classToLoad.getMethod(mainMethod);
+			method=classToLoad.getDeclaredMethod(mainMethod,String[].class);
+			Object instance = classToLoad.newInstance ();
+			method.invoke(instance);
+		} catch (MalformedURLException e) {
+			// TODO Auto-generated catch block
+			System.out.println("Can not get the url of the jar file!");
+			e.printStackTrace();
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			System.out.println("Can not initialize the main class!");
+			e.printStackTrace();
+		} catch (SecurityException e) {
+			// TODO Auto-generated catch block
+			System.out.println("Can not access the main methd because of security problems!");
+			e.printStackTrace();
+		} catch (NoSuchMethodException e) {
+			// TODO Auto-generated catch block
+			System.out.println("Can not find the main method!");
+			e.printStackTrace();
+		} catch (IllegalArgumentException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IllegalAccessException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (InvocationTargetException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		catch (InstantiationException e) {
+			// TODO Auto-generated catch block
+			try {
+				String [] args;
+				method.invoke(classToLoad,args);
+			} catch (IllegalArgumentException e1) {
+				// TODO Auto-generated catch block
+				e1.printStackTrace();
+			} catch (IllegalAccessException e1) {
+				// TODO Auto-generated catch block
+				e1.printStackTrace();
+			} catch (InvocationTargetException e1) {
+				// TODO Auto-generated catch block
+				e1.printStackTrace();
+			}
+			//e.printStackTrace();
+		}
+	}
+
+}

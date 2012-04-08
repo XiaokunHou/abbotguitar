@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<libraryInfos>
+<libraryInfo home="D:\specilized\JDk" version="1.6.0_20">
+<bootpath>
+<entry path="D:\specilized\JDk\jre\lib\resources.jar"/>
+<entry path="D:\specilized\JDk\jre\lib\rt.jar"/>
+<entry path="D:\specilized\JDk\jre\lib\sunrsasign.jar"/>
+<entry path="D:\specilized\JDk\jre\lib\jsse.jar"/>
+<entry path="D:\specilized\JDk\jre\lib\jce.jar"/>
+<entry path="D:\specilized\JDk\jre\lib\charsets.jar"/>
+<entry path="D:\specilized\JDk\jre\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="D:\specilized\JDk\jre\lib\ext"/>
+<entry path="C:\Windows\Sun\Java\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="D:\specilized\JDk\jre\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+</libraryInfos>

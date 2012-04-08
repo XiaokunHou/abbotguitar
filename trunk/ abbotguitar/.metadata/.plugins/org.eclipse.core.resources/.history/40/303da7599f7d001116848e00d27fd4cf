@@ -1,0 +1,14 @@
+package cn.edu.nju.software.ripperCore;
+
+import java.util.*;
+
+public class RipperMonitor {
+
+	private OperationConfig config;
+	private List<String> ignoredWindowsList =new ArrayList<String>(); 
+	public RipperMonitor(OperationConfig config) {
+		// TODO Auto-generated constructor stub
+		this.config=config;
+	}
+
+}

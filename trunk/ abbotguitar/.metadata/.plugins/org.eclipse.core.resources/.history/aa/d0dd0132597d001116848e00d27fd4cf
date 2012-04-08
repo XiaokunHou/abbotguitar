@@ -1,0 +1,21 @@
+package cn.edu.nju.software.ripperCore;
+
+public class Launch {
+	private String path;
+	private String mainClass;
+	private String mainMethod;
+	private String argument;
+	public Launch(String path, String mainClass, String mainMethod,
+			String argument) {
+		// TODO Auto-generated constructor stub
+		this.path=path;
+		this.mainClass=mainClass;
+		this.mainMethod=mainMethod;
+		this.argument=argument;
+	}
+	public void autLaunch() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}
