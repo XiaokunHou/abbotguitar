@@ -22,7 +22,7 @@ public class RipperMain {
 
 	public static void main(String args[]) {
 		// define the launch info of the AUT
-		String path = "C:\\Users\\huotuotuofly\\Desktop\\aut.jar";
+		String path = "E:\\SEAN\\aut.jar";
 		String mainClass = "Project";
 		String mainMethod = "main";
 		String argument = "";
