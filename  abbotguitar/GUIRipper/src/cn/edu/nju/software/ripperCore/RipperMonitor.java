@@ -37,17 +37,17 @@ public class RipperMonitor {
 		return (tempOpenedWinStack.size() > 0);
 		// return (tempGWinStack.size() > 0);
 	}
-	public LinkedList<GWindow> getOpenedWindowCache() {
-
-		LinkedList<GWindow> retWindows = new LinkedList<GWindow>();
-
-		for (Window window : tempOpenedWinStack) {
-			GWindow gWindow = new JFCXWindow(window);
-			if (gWindow.isValid())
-				retWindows.addLast(gWindow);
-		}
-		return retWindows;
-	}
+//	public LinkedList<GWindow> getOpenedWindowCache() {
+//
+//		LinkedList<GWindow> retWindows = new LinkedList<GWindow>();
+//
+//		for (Window window : tempOpenedWinStack) {
+//			GWindow gWindow = new JFCXWindow(window);
+//			if (gWindow.isValid())
+//				retWindows.addLast(gWindow);
+//		}
+//		return retWindows;
+//	}
 	public class WindowOpenListener implements AWTEventListener {
 
 		/*
