@@ -163,14 +163,14 @@ public class JFCDefaultIDGeneratorSimple implements GIDGenerator
    {
       GUITypeWrapper wGUI = new GUITypeWrapper(gui);
       String title = wGUI.getTitle();
-      AppUtil appUtil = new AppUtil();
+      //AppUtil appUtil = new AppUtil();
 
       System.out.println("SSS " + title);
-      String fuzzyTitle = appUtil.findRegexForString(title);
+      //String fuzzyTitle = appUtil.findRegexForString(title);
 
-      long hashcode = fuzzyTitle.hashCode();
+    //  long hashcode = fuzzyTitle.hashCode();
 
-      hashcode = (hashcode * 2) & 0xffffffffL;
+   //   hashcode = (hashcode * 2) & 0xffffffffL;
 
       return hashcode;
    }
