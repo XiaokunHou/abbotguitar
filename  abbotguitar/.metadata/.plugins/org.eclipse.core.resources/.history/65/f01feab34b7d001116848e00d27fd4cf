@@ -1,0 +1,163 @@
+package cn.edu.nju.software.ripperCore;
+
+import java.awt.Component;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.net.URLClassLoader;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Iterator;
+
+import abbot.editor.HierarchyWriter;
+import abbot.finder.AWTHierarchy;
+import abbot.finder.Hierarchy;
+import abbot.tester.JButtonTester;
+
+public class RipperMain {
+	public ArrayList<Component> comList = new ArrayList<Component>();
+
+	public static void main(String args[]) {
+		// define the launch info of the AUT
+		String path = "C:\\Users\\huotuotuofly\\Desktop\\aut.jar";
+		String mainClass = "abbot.editor.ScriptEditor";
+		String mainMethod = "main";
+		String argument = "";
+		new RipperMain().ripper(path, mainClass, mainMethod, argument);
+	}
+
+	@SuppressWarnings("static-access")
+	private void ripper(String path, String mainClass, String mainMethod,
+			String argument) {
+		// TODO Auto-generated method stub
+		// dynamic include the jar file. And run it.
+		String arg[] = new String[] {};
+		File jarFile = new File(path);
+		Class classToLoad = null;
+		Method method = null;
+		try {
+			URL[] url = new URL[] { jarFile.toURI().toURL() };
+			URLClassLoader child = new URLClassLoader(url, this.getClass()
+					.getClassLoader());
+			classToLoad = Class.forName(mainClass, true, child);
+			// Method method=classToLoad.getMethod(mainMethod);
+			method = classToLoad.getDeclaredMethod(mainMethod, String[].class);
+			Object instance = classToLoad.newInstance();
+			method.invoke(instance);
+			//ripperCore();
+		} catch (MalformedURLException e) {
+			// TODO Auto-generated catch block
+			System.out.println("Can not get the url of the jar file!");
+			e.printStackTrace();
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			System.out.println("Can not initialize the main class!");
+			e.printStackTrace();
+		} catch (SecurityException e) {
+			// TODO Auto-generated catch block
+			System.out
+					.println("Can not access the main methd because of security problems!");
+			e.printStackTrace();
+		} catch (NoSuchMethodException e) {
+			// TODO Auto-generated catch block
+			System.out.println("Can not find the main method!");
+			e.printStackTrace();
+		} catch (IllegalArgumentException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IllegalAccessException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (InvocationTargetException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (InstantiationException e) {
+			// TODO Auto-generated catch block
+			try {
+				// String [] args=new String[]{};
+				String arg1[] = {};
+				System.out.println(arg1.length);
+				Object obj[] = new Object[] { arg1 };
+				method.invoke(classToLoad, obj);
+				getHierarchy();
+			} catch (IllegalArgumentException e1) {
+				// TODO Auto-generated catch block
+				e1.printStackTrace();
+			} catch (IllegalAccessException e1) {
+				// TODO Auto-generated catch block
+				e1.printStackTrace();
+			} catch (InvocationTargetException e1) {
+				// TODO Auto-generated catch block
+				e1.printStackTrace();
+			}
+			// e.printStackTrace();
+		}
+	}
+
+	private void getHierarchy() {
+		// TODO Auto-generated method stub
+
+		Hierarchy hier = AWTHierarchy.getDefault();
+		HierarchyWriter hw = new HierarchyWriter(hier);
+		System.out.println("hier: " + hier);
+		File file = new File("a");
+		try {
+			hw.writeHierarchy(new FileWriter(file));
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		Collection<Component> roots = hier.getRoots();
+		printChilds(hier, roots, -2);
+
+	}
+
+	private void printChilds(Hierarchy hier, Collection<Component> roots,
+			int indent) {
+		// TODO Auto-generated method stub
+
+		Iterator it = roots.iterator();
+		while (it.hasNext()) {
+			Component root = (Component) it.next();
+			int count = indent + 4;
+			printNumBl("-", count);
+			System.out.println("> DETAIL: " + root);
+			if (!comList.contains(root)) {
+				comList.add(root);
+				if (root instanceof javax.swing.JButton) {
+					if (((javax.swing.JButton) root).getText().equals("µÇÂ¼")) {
+						System.out.println("say login");
+						JButtonTester tester = new JButtonTester();
+						tester.actionClick(root);
+						getHierarchy();
+					}
+					if (((javax.swing.JButton) root).getText().equals("ÍË³ö")) {
+						System.out.println("say exit");
+						JButtonTester tester = new JButtonTester();
+						tester.actionClick(root);
+						getHierarchy();
+					}
+				}
+			}
+			Collection<Component> subComs = hier.getComponents(root);
+			if (subComs.size() != 0) {
+				// System.out.println("child components" + subComs);
+				printChilds(hier, subComs, count);
+			}
+		}
+
+	}
+
+	public static void printNumBl(String indent, int num) {
+		StringBuffer sb = new StringBuffer();
+		for (int i = 0; i < num; i++) {
+			sb.append(indent);
+		}
+		System.out.print(sb);
+	}
+
+}

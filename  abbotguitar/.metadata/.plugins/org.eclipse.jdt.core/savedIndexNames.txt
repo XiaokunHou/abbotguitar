@@ -1,0 +1,9 @@
+INDEX VERSION 1.126+F:\MyGuitar\.metadata\.plugins\org.eclipse.jdt.core
+2011814390.index
+183020524.index
+3293549213.index
+762215623.index
+1417706905.index
+1722431991.index
+2589834667.index
+1348864450.index
