@@ -5,5 +5,7 @@
 	<classpathentry kind="lib" path="E:/SEAN/JARS/abbot.jar"/>
 	<classpathentry kind="lib" path="E:/SEAN/JARS/costello.jar"/>
 	<classpathentry kind="lib" path="E:/SEAN/JARS/junit-4.8.2.jar"/>
+	<classpathentry kind="lib" path="E:/SEAN/JARS/args4j-2.0.10.jar"/>
+	<classpathentry kind="lib" path="E:/SEAN/JARS/jemmy.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
