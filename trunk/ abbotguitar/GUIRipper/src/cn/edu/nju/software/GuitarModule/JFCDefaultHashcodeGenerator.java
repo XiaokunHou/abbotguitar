@@ -25,14 +25,13 @@ import java.util.Hashtable;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-import java.lang.Math;
 
+import cn.edu.nju.software.GuitarWrapper.ComponentTypeWrapper;
+import cn.edu.nju.software.GuitarWrapper.GUITypeWrapper;
 import cn.edu.nju.software.ripperModuleData.AttributesType;
 import cn.edu.nju.software.ripperModuleData.ComponentType;
 import cn.edu.nju.software.ripperModuleData.GUIType;
 import cn.edu.nju.software.ripperModuleData.PropertyType;
-import cn.edu.nju.software.GuitarWrapper.ComponentTypeWrapper;
-import cn.edu.nju.software.GuitarWrapper.GUITypeWrapper;
 
 /**
  * @author  </a>

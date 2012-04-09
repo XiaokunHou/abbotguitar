@@ -22,14 +22,14 @@ package cn.edu.nju.software.GuitarModule;
 import java.util.ArrayList;
 import java.util.List;
 
+import cn.edu.nju.software.GuitarWrapper.ComponentTypeWrapper;
+import cn.edu.nju.software.GuitarWrapper.PropertyTypeWrapper;
 import cn.edu.nju.software.event.GEvent;
 import cn.edu.nju.software.ripperModuleData.AttributesType;
 import cn.edu.nju.software.ripperModuleData.ComponentType;
 import cn.edu.nju.software.ripperModuleData.ContainerType;
 import cn.edu.nju.software.ripperModuleData.ContentsType;
 import cn.edu.nju.software.ripperModuleData.PropertyType;
-import cn.edu.nju.software.GuitarWrapper.ComponentTypeWrapper;
-import cn.edu.nju.software.GuitarWrapper.PropertyTypeWrapper;
 
 /**
  * Abstract class for accessible components (widget/container) in GUITAR

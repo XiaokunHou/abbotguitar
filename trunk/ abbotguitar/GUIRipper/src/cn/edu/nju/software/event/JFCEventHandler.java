@@ -21,8 +21,6 @@ package cn.edu.nju.software.event;
 
 import java.awt.Component;
 
-import javax.accessibility.Accessible;
-
 import cn.edu.nju.software.GuitarModule.GComponent;
 import cn.edu.nju.software.GuitarModule.JFCXComponent;
 

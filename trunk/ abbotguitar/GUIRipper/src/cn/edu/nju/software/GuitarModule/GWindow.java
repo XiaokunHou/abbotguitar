@@ -21,13 +21,13 @@ package cn.edu.nju.software.GuitarModule;
 
 import java.util.List;
 
+import cn.edu.nju.software.GuitarWrapper.ComponentTypeWrapper;
 import cn.edu.nju.software.ripperModuleData.AttributesType;
 import cn.edu.nju.software.ripperModuleData.ComponentType;
 import cn.edu.nju.software.ripperModuleData.ContainerType;
 import cn.edu.nju.software.ripperModuleData.ContentsType;
 import cn.edu.nju.software.ripperModuleData.GUIType;
 import cn.edu.nju.software.ripperModuleData.PropertyType;
-import cn.edu.nju.software.GuitarWrapper.ComponentTypeWrapper;
 
 /**
  * Abstract class for accessible windows in GUITAR

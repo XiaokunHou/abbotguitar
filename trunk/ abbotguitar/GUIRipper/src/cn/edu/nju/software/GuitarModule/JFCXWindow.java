@@ -20,9 +20,7 @@
 package cn.edu.nju.software.GuitarModule;
 
 import java.awt.Component;
-import java.awt.Dialog;
 import java.awt.Window;
-import java.io.File;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.ArrayList;
@@ -33,13 +31,13 @@ import javax.accessibility.AccessibleContext;
 import javax.accessibility.AccessibleState;
 import javax.accessibility.AccessibleStateSet;
 
+import cn.edu.nju.software.GuitarWrapper.ComponentTypeWrapper;
 import cn.edu.nju.software.ripperModuleData.ComponentType;
 import cn.edu.nju.software.ripperModuleData.ContainerType;
 import cn.edu.nju.software.ripperModuleData.ContentsType;
 import cn.edu.nju.software.ripperModuleData.GUIType;
 import cn.edu.nju.software.ripperModuleData.ObjectFactory;
 import cn.edu.nju.software.ripperModuleData.PropertyType;
-import cn.edu.nju.software.GuitarWrapper.ComponentTypeWrapper;
 
 /**
  * Implementation for {@link GWindow} for Java Swing

@@ -20,7 +20,7 @@
 package cn.edu.nju.software.ripper.filter;
 
 import java.awt.Component;
-import javax.accessibility.Accessible;
+
 import javax.swing.JTabbedPane;
 
 import cn.edu.nju.software.GuitarModule.GComponent;

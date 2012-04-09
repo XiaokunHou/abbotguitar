@@ -24,25 +24,15 @@
  */
 package cn.edu.nju.software.util;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 import cn.edu.nju.software.ripperModuleData.AttributesType;
 import cn.edu.nju.software.ripperModuleData.ComponentType;
 import cn.edu.nju.software.ripperModuleData.ContainerType;
-import cn.edu.nju.software.ripperModuleData.ContentsType;
 import cn.edu.nju.software.ripperModuleData.GUIStructure;
 import cn.edu.nju.software.ripperModuleData.GUIType;
-import cn.edu.nju.software.ripperModuleData.ObjectFactory;
 import cn.edu.nju.software.ripperModuleData.PropertyType;
-import cn.edu.nju.software.GuitarWrapper.AttributesTypeWrapper;
-import cn.edu.nju.software.GuitarWrapper.ComponentTypeWrapper;
-import cn.edu.nju.software.GuitarWrapper.GUITypeWrapper;
-
-import cn.edu.nju.software.util.GUITARLog;
 
 /**
  * This class implements a functionality for logging all

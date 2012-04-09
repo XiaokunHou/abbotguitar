@@ -21,17 +21,12 @@ package cn.edu.nju.software.ripper.filter;
 
 import java.awt.Component;
 import java.util.Enumeration;
-import java.util.Properties;
 
-import javax.swing.JTabbedPane;
 import javax.swing.JTree;
-import javax.swing.text.Position;
 import javax.swing.tree.DefaultMutableTreeNode;
 import javax.swing.tree.TreeModel;
 import javax.swing.tree.TreeNode;
 import javax.swing.tree.TreePath;
-
-import org.netbeans.jemmy.drivers.trees.JTreeMouseDriver;
 
 import cn.edu.nju.software.GuitarModule.GComponent;
 import cn.edu.nju.software.GuitarModule.GUITARConstants;

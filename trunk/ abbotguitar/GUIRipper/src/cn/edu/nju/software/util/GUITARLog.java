@@ -31,12 +31,7 @@ package cn.edu.nju.software.util;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
-
-import org.apache.log4j.FileAppender;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
-import org.apache.log4j.PatternLayout;
-import org.apache.log4j.PropertyConfigurator;
+import java.util.logging.Level;
 
 import cn.edu.nju.software.GuitarModule.GUITARConstants;
 
