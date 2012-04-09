@@ -63,7 +63,7 @@ public class GUIStructureInfoUtil
     * (non-Javadoc)
     */
    public void
-   generate(GUIStructure guistructure,
+ generate(GUIStructure guistructure,
             boolean leaf)
    {
       for (GUIType gui : guistructure.getGUI()) {
