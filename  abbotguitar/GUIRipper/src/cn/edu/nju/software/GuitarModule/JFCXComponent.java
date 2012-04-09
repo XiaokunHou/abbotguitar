@@ -36,10 +36,10 @@ import javax.accessibility.AccessibleAction;
 import javax.accessibility.AccessibleContext;
 import javax.swing.JTabbedPane;
 
+import cn.edu.nju.software.GuitarWrapper.AttributesTypeWrapper;
 import cn.edu.nju.software.event.EventManager;
 import cn.edu.nju.software.event.GEvent;
 import cn.edu.nju.software.ripperModuleData.PropertyType;
-import cn.edu.nju.software.GuitarWrapper.AttributesTypeWrapper;
 
 
 /**

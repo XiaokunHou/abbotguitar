@@ -25,7 +25,6 @@ import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlType;
 
-import cn.edu.nju.software.ripperModuleData.EventMapElementType;
 import cn.edu.nju.software.ripperModuleData.EventMapType;
 import cn.edu.nju.software.ripperModuleData.EventType;
 

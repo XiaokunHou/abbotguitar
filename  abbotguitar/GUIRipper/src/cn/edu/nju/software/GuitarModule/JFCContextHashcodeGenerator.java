@@ -25,14 +25,12 @@ import java.util.Hashtable;
 import java.util.LinkedList;
 import java.util.List;
 
-
-
+import cn.edu.nju.software.GuitarWrapper.ComponentTypeWrapper;
+import cn.edu.nju.software.GuitarWrapper.GUITypeWrapper;
 import cn.edu.nju.software.ripperModuleData.AttributesType;
 import cn.edu.nju.software.ripperModuleData.ComponentType;
 import cn.edu.nju.software.ripperModuleData.GUIType;
 import cn.edu.nju.software.ripperModuleData.PropertyType;
-import cn.edu.nju.software.GuitarWrapper.ComponentTypeWrapper;
-import cn.edu.nju.software.GuitarWrapper.GUITypeWrapper;
 
 /**
  * @author  </a>

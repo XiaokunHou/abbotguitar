@@ -25,14 +25,12 @@ import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 
-import cn.edu.nju.software.event.GEvent;
+import cn.edu.nju.software.GuitarWrapper.AttributesTypeWrapper;
 import cn.edu.nju.software.event.JFCActionHandler;
 import cn.edu.nju.software.event.JFCEditableTextHandler;
 import cn.edu.nju.software.event.JFCEventHandler;
 import cn.edu.nju.software.event.JFCSelectFromParent;
 import cn.edu.nju.software.event.JFCSelectionHandler;
-import cn.edu.nju.software.event.JFCValueHandler;
-import cn.edu.nju.software.GuitarWrapper.AttributesTypeWrapper;
 
 /**
  * Constants specific to JFC GUITAR.

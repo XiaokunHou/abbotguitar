@@ -16,7 +16,11 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import java.net.MalformedURLException;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Set;
 
 import javax.accessibility.AccessibleAction;
 import javax.accessibility.AccessibleContext;
@@ -25,11 +29,19 @@ import javax.imageio.ImageIO;
 
 import org.netbeans.jemmy.EventTool;
 
-import cn.edu.nju.software.GuitarModule.*;
-
-import cn.edu.nju.software.event.*;
-
-import cn.edu.nju.software.exception.*;
+import cn.edu.nju.software.GuitarModule.GApplication;
+import cn.edu.nju.software.GuitarModule.GComponent;
+import cn.edu.nju.software.GuitarModule.GUITARConstants;
+import cn.edu.nju.software.GuitarModule.GWindow;
+import cn.edu.nju.software.GuitarModule.JFCApplication;
+import cn.edu.nju.software.GuitarModule.JFCConstants;
+import cn.edu.nju.software.GuitarModule.JFCXComponent;
+import cn.edu.nju.software.GuitarModule.JFCXWindow;
+import cn.edu.nju.software.event.EventManager;
+import cn.edu.nju.software.event.GEvent;
+import cn.edu.nju.software.event.JFCActionEDT;
+import cn.edu.nju.software.event.JFCEventHandler;
+import cn.edu.nju.software.exception.ApplicationConnectException;
 
 
 public class RipperMonitor {

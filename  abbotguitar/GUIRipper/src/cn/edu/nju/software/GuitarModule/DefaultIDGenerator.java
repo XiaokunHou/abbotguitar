@@ -22,6 +22,7 @@ package cn.edu.nju.software.GuitarModule;
 import java.util.ArrayList;
 import java.util.List;
 
+import cn.edu.nju.software.GuitarWrapper.GUITypeWrapper;
 import cn.edu.nju.software.ripperModuleData.AttributesType;
 import cn.edu.nju.software.ripperModuleData.ComponentType;
 import cn.edu.nju.software.ripperModuleData.ContainerType;
@@ -29,7 +30,6 @@ import cn.edu.nju.software.ripperModuleData.GUIStructure;
 import cn.edu.nju.software.ripperModuleData.GUIType;
 import cn.edu.nju.software.ripperModuleData.ObjectFactory;
 import cn.edu.nju.software.ripperModuleData.PropertyType;
-import cn.edu.nju.software.GuitarWrapper.GUITypeWrapper;
 
 /**
  * Default ID generator for JFC application

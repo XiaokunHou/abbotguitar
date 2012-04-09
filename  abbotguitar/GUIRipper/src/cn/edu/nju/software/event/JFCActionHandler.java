@@ -23,7 +23,6 @@ import java.awt.Component;
 import java.util.Hashtable;
 import java.util.List;
 
-import javax.accessibility.Accessible;
 import javax.accessibility.AccessibleAction;
 import javax.accessibility.AccessibleContext;
 import javax.swing.SwingUtilities;

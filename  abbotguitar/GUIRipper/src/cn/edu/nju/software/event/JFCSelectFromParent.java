@@ -25,9 +25,6 @@ import java.lang.reflect.Method;
 import java.util.Hashtable;
 import java.util.List;
 
-import javax.accessibility.Accessible;
-import javax.accessibility.AccessibleContext;
-
 import cn.edu.nju.software.GuitarModule.GComponent;
 import cn.edu.nju.software.GuitarModule.JFCXComponent;
  

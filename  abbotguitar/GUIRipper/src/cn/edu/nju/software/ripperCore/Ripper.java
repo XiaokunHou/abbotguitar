@@ -1,17 +1,25 @@
 package cn.edu.nju.software.ripperCore;
 
-import java.awt.AWTException;
 import java.io.IOException;
 import java.util.LinkedList;
 import java.util.List;
 
-import cn.edu.nju.software.GuitarModule.*;
+import cn.edu.nju.software.GuitarModule.GComponent;
+import cn.edu.nju.software.GuitarModule.GIDGenerator;
+import cn.edu.nju.software.GuitarModule.GUITARConstants;
+import cn.edu.nju.software.GuitarModule.GWindow;
 import cn.edu.nju.software.GuitarWrapper.ComponentTypeWrapper;
 import cn.edu.nju.software.GuitarWrapper.GUITypeWrapper;
-import cn.edu.nju.software.exception.*;
-
+import cn.edu.nju.software.exception.GException;
+import cn.edu.nju.software.exception.RipperStateException;
 import cn.edu.nju.software.ripper.filter.GComponentFilter;
-import cn.edu.nju.software.ripperModuleData.*;
+import cn.edu.nju.software.ripperModuleData.ComponentListType;
+import cn.edu.nju.software.ripperModuleData.ComponentType;
+import cn.edu.nju.software.ripperModuleData.ContainerType;
+import cn.edu.nju.software.ripperModuleData.FullComponentType;
+import cn.edu.nju.software.ripperModuleData.GUIStructure;
+import cn.edu.nju.software.ripperModuleData.GUIType;
+import cn.edu.nju.software.ripperModuleData.ObjectFactory;
 import cn.edu.nju.software.util.AppUtil;
 
 public class Ripper {
