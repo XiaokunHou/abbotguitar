@@ -38,7 +38,7 @@ import cn.edu.nju.software.ripperModuleData.PropertyType;
  * This class implements a functionality for logging all
  * window names of a GUI structure.
  * 
- * @author <a href="mailto:baonn@cs.umd.edu"> Bao N. Nguyen </a>
+ * @author   Bao N. Nguyen </a>
  * 
  */
 public class GUIStructureInfoUtil

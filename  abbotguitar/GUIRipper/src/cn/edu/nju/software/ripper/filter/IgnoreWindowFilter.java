@@ -10,7 +10,7 @@ import cn.edu.nju.software.ripperModuleData.GUIType;
 
 
 /**
- * @author Bao Nguyen
+ * @author  
  *
  */
 public class IgnoreWindowFilter extends GWindowFilter {
@@ -23,7 +23,7 @@ public class IgnoreWindowFilter extends GWindowFilter {
     }
 
     /* (non-Javadoc)
-     * @see edu.umd.cs.guitar.ripper.GWindowFilter#isProcess(edu.umd.cs.guitar.model.GWindow)
+     * @see ..guitar.ripper.GWindowFilter#isProcess(..guitar.model.GWindow)
      */
     @Override
     public boolean isProcess(GWindow window) {
@@ -32,7 +32,7 @@ public class IgnoreWindowFilter extends GWindowFilter {
     }
 
     /* (non-Javadoc)
-     * @see edu.umd.cs.guitar.ripper.GWindowFilter#ripWindow(edu.umd.cs.guitar.model.GWindow)
+     * @see ..guitar.ripper.GWindowFilter#ripWindow(..guitar.model.GWindow)
      */
     @Override
     public GUIType ripWindow(GWindow window) {
