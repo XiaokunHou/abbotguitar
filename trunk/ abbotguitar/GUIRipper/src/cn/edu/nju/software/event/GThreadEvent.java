@@ -1,8 +1,6 @@
 /*	
- *  Copyright (c) 2009-@year@. The GUITAR group at the University of Maryland. Names of owners of this group may
- *  be obtained by sending an e-mail to atif@cs.umd.edu
  * 
- *  Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated 
+ 
  *  documentation files (the "Software"), to deal in the Software without restriction, including without 
  *  limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
  *	the Software, and to permit persons to whom the Software is furnished to do so, subject to the following 
@@ -23,7 +21,6 @@ import java.util.Hashtable;
 import java.util.List;
 
 import cn.edu.nju.software.GuitarModule.GComponent;
- 
 
 /**
  * Abstract class for all GUITAR events requiring to run in a separate thread.
@@ -31,7 +28,7 @@ import cn.edu.nju.software.GuitarModule.GComponent;
  * 
  * <p>
  * 
- * @author <a href="mailto:baonn@cs.umd.edu"> Bao Nguyen </a>
+ * @author </a>
  */
 public abstract class GThreadEvent implements GEvent {
 
@@ -48,7 +45,7 @@ public abstract class GThreadEvent implements GEvent {
 	static DispatchThreadGroup threadGroup;
 
 	@Override
-	public void perform(GComponent gComponent, List<String>  parameters,
+	public void perform(GComponent gComponent, List<String> parameters,
 			Hashtable<String, List<String>> optionalData) {
 		Thread t = new Thread(threadGroup, new DispatchThread(gComponent,
 				parameters, optionalData));
@@ -106,7 +103,7 @@ public abstract class GThreadEvent implements GEvent {
 	 * 
 	 * <p>
 	 * 
-	 * @author <a href="mailto:baonn@cs.umd.edu"> Bao N. Nguyen </a>
+	 * @author Bao N. Nguyen </a>
 	 * 
 	 */
 	class DispatchThreadGroup extends ThreadGroup {
@@ -131,7 +128,7 @@ public abstract class GThreadEvent implements GEvent {
 	 * 
 	 * <p>
 	 * 
-	 * @author <a href="mailto:baonn@cs.umd.edu"> Bao Nguyen </a>
+	 * @author </a>
 	 */
 	// private class DispatchThread extends Thread {
 	private class DispatchThread implements Runnable {

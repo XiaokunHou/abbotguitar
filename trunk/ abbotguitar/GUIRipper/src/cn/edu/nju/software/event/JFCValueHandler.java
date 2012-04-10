@@ -1,8 +1,8 @@
 /*	
- *  Copyright (c) 2009-@year@. The GUITAR group at the University of Maryland. Names of owners of this group may
- *  be obtained by sending an e-mail to atif@cs.umd.edu
+ 
+ 
  * 
- *  Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated 
+ 
  *  documentation files (the "Software"), to deal in the Software without restriction, including without 
  *  limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
  *	the Software, and to permit persons to whom the Software is furnished to do so, subject to the following 
@@ -29,7 +29,7 @@ import cn.edu.nju.software.GuitarModule.GComponent;
 import cn.edu.nju.software.GuitarModule.JFCXComponent;
 
 /**
- * @author <a href="mailto:baonn@cs.umd.edu"> Bao Nguyen </a>
+ * @author     </a>
  */
 public class JFCValueHandler extends JFCEventHandler {
 
@@ -44,7 +44,7 @@ public class JFCValueHandler extends JFCEventHandler {
 	 * (non-Javadoc)
 	 * 
 	 * @see
-	 * cn.edu.nju.software.event.JEventHandler#actionPerformImp(edu.umd.cs.guitar
+	 * cn.edu.nju.software.event.JEventHandler#actionPerformImp(..guitar
 	 * .model.GXComponent)
 	 */
 	@Override
@@ -58,7 +58,7 @@ public class JFCValueHandler extends JFCEventHandler {
 	 * (non-Javadoc)
 	 * 
 	 * @see
-	 * cn.edu.nju.software.event.JFCEventHandler#actionPerformImp(edu.umd.cs.guitar
+	 * cn.edu.nju.software.event.JFCEventHandler#actionPerformImp(..guitar
 	 * .model.GXComponent, java.lang.Object)
 	 */
 	@Override

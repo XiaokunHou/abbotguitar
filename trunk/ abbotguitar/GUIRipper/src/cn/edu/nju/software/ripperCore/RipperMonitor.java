@@ -17,7 +17,9 @@ import java.io.File;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Set;
@@ -28,6 +30,9 @@ import javax.accessibility.AccessibleText;
 import javax.imageio.ImageIO;
 
 import org.netbeans.jemmy.EventTool;
+
+import abbot.finder.AWTHierarchy;
+import abbot.finder.Hierarchy;
 
 import cn.edu.nju.software.GuitarModule.GApplication;
 import cn.edu.nju.software.GuitarModule.GComponent;
@@ -97,7 +102,7 @@ public class RipperMonitor {
 	/*
 	 * (non-Javadoc)
 	 * 
-	 * @see edu.umd.cs.guitar.ripper.RipperMonitor#cleanUp()
+	 * @see ..guitar.ripper.RipperMonitor#cleanUp()
 	 */
 	public void cleanUp() {
 		// Debugger.pause("Clean up pause....");
@@ -107,7 +112,7 @@ public class RipperMonitor {
 	 * (non-Javadoc)
 	 * 
 	 * @see
-	 * edu.umd.cs.guitar.ripper.RipperMonitor#closeWindow(edu.umd.cs.guitar.
+	 * ..guitar.ripper.RipperMonitor#closeWindow(..guitar.
 	 * model.GXWindow)
 	 */
 	public void closeWindow(GWindow gWindow) {
@@ -144,7 +149,7 @@ public class RipperMonitor {
 	 * (non-Javadoc)
 	 * 
 	 * @see
-	 * edu.umd.cs.guitar.ripper.RipperMonitor#expand(edu.umd.cs.guitar.model
+	 * ..guitar.ripper.RipperMonitor#expand(..guitar.model
 	 * .GXComponent)
 	 */
 	public void expandGUI(GComponent component) {
@@ -167,7 +172,7 @@ public class RipperMonitor {
 	/*
 	 * (non-Javadoc)
 	 * 
-	 * @see edu.umd.cs.guitar.ripper.RipperMonitor#getOpenedWindowCache()
+	 * @see ..guitar.ripper.RipperMonitor#getOpenedWindowCache()
 	 */
 	public LinkedList<GWindow> getOpenedWindowCache() {
 
@@ -196,7 +201,7 @@ public class RipperMonitor {
 	/*
 	 * (non-Javadoc)
 	 * 
-	 * @see edu.umd.cs.guitar.ripper.RipperMonitor#getRootWindows()
+	 * @see ..guitar.ripper.RipperMonitor#getRootWindows()
 	 */
 	public List<GWindow> getRootWindows() {
 
@@ -204,10 +209,13 @@ public class RipperMonitor {
 
 		retWindowList.clear();
 
-		Frame[] lFrames = Frame.getFrames();
+//		Hierarchy hierarchy=AWTHierarchy.getDefault();
+//		Collection roots=hierarchy.getRoots();
 
-		for (Frame frame : lFrames) {
+		Frame[] roots = Frame.getFrames();
 
+		for (Object frame1 : roots) {
+				Frame frame=(Frame)frame1;
 			if (!isValidRootWindow(frame))
 				continue;
 
@@ -269,8 +277,8 @@ public class RipperMonitor {
 	 * (non-Javadoc)
 	 * 
 	 * @see
-	 * edu.umd.cs.guitar.ripper.RipperMonitor#isExpandable(edu.umd.cs.guitar
-	 * .model.GXComponent, edu.umd.cs.guitar.model.GXWindow)
+	 * ..guitar.ripper.RipperMonitor#isExpandable(..guitar
+	 * .model.GXComponent, ..guitar.model.GXWindow)
 	 */
 	boolean isExpandable(GComponent gComponent, GWindow window) {
 
@@ -341,7 +349,7 @@ public class RipperMonitor {
 	 * (non-Javadoc)
 	 * 
 	 * @see
-	 * edu.umd.cs.guitar.ripper.RipperMonitor#isIgnoredWindow(edu.umd.cs.guitar
+	 * ..guitar.ripper.RipperMonitor#isIgnoredWindow(..guitar
 	 * .model.GXWindow)
 	 */
 	public boolean isIgnoredWindow(GWindow window) {
@@ -353,7 +361,7 @@ public class RipperMonitor {
 	/*
 	 * (non-Javadoc)
 	 * 
-	 * @see edu.umd.cs.guitar.ripper.RipperMonitor#isNewWindowOpened()
+	 * @see ..guitar.ripper.RipperMonitor#isNewWindowOpened()
 	 */
 	public boolean isNewWindowOpened() {
 		return (tempOpenedWinStack.size() > 0);
@@ -363,7 +371,7 @@ public class RipperMonitor {
 	/*
 	 * (non-Javadoc)
 	 * 
-	 * @see edu.umd.cs.guitar.ripper.RipperMonitor#resetWindowCache()
+	 * @see ..guitar.ripper.RipperMonitor#resetWindowCache()
 	 */
 	public void resetWindowCache() {
 		this.tempOpenedWinStack.clear();
@@ -419,7 +427,7 @@ public class RipperMonitor {
 	/*
 	 * (non-Javadoc)
 	 * 
-	 * @see edu.umd.cs.guitar.ripper.RipperMonitor#setUp()
+	 * @see ..guitar.ripper.RipperMonitor#setUp()
 	 */
 	public void setUp() {
 
@@ -542,7 +550,7 @@ public class RipperMonitor {
 	/*
 	 * (non-Javadoc)
 	 * 
-	 * @see edu.umd.cs.guitar.ripper.GRipperMonitor#isWindowClose()
+	 * @see ..guitar.ripper.GRipperMonitor#isWindowClose()
 	 */
 	public boolean isWindowClosed() {
 		return (tempClosedWinStack.size() > 0);

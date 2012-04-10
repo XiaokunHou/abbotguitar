@@ -40,7 +40,7 @@ import cn.edu.nju.software.GuitarModule.GUITARConstants;
  * using a global mechanism
  * <p>
  * 
- * @author Bao Nguyen
+ * @author  
  */
 public class GUITARLog {
 
