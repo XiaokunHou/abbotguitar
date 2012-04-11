@@ -262,4 +262,8 @@ public class EventType {
         this.optional = value;
     }
 
+	public void setListeners(List<String> listeners) {
+		this.listeners = listeners;
+	}
+
 }
