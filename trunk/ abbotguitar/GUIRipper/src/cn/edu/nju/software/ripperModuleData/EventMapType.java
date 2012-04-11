@@ -74,4 +74,9 @@ public class EventMapType {
         return this.eventMapElement;
     }
 
+	public void setEventMapElement(List<EventType> eventMapElement) {
+		this.eventMapElement = eventMapElement;
+	}
+
+    
 }

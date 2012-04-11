@@ -23,14 +23,14 @@ public class RipperMain {
 
 	public void ripperMain(String args[]) {
 		// define the launch info of the AUT
-//		String path = "E:\\SEAN\\aut.jar";
-//		String mainClass = "Project";
-//		String mainMethod = "main";
-//		String argument = "";
-		String path = "E:\\SEAN\\workspace\\AUT2.jar";
-		String mainClass = "Example2Frame";
+		String path = "E:\\SEAN\\aut.jar";
+		String mainClass = "Project";
 		String mainMethod = "main";
 		String argument = "";
+//		String path = "E:\\SEAN\\workspace\\AUT2.jar";
+//		String mainClass = "Example2Frame";
+//		String mainMethod = "main";
+//		String argument = "";
 
 		Launch launch = new Launch(path, mainClass, mainMethod, argument);
 		launch.autLaunch();
