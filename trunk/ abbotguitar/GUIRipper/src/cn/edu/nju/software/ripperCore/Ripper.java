@@ -480,4 +480,16 @@ public class Ripper {
 	// Window filter
 	// LinkedList<GWindowFilter> lWindowFilter = new
 	// LinkedList<GWindowFilter>();
+	/**
+	 * Add a component filter
+	 * 
+	 * @param filter
+	 */
+	public void addComponentFilter(GComponentFilter filter) {
+		if (this.lComponentFilter == null) {
+			lComponentFilter = new LinkedList<GComponentFilter>();
+		}
+		lComponentFilter.addLast(filter);
+		filter.setRipper(this);
+	}
 }
