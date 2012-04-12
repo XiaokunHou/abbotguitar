@@ -31,6 +31,7 @@ import cn.edu.nju.software.util.GUIStructureInfoUtil;
 public class RipperMain {
 
 	private Ripper ripper;
+	JFCRipperConfiguration configuration;
 
 	public static void main(String args[]) {
 		new RipperMain().ripperMain(args);
@@ -51,8 +52,9 @@ public class RipperMain {
 		launch.autLaunch();
 
 		long nStartTime = System.currentTimeMillis();
-		OperationConfig config = new OperationConfig();
-		ripper = new Ripper(config);
+		//OperationConfig config = new OperationConfig();
+		configuration = new JFCRipperConfiguration();
+		ripper = new Ripper(configuration);
 
 		setupEnv();
 		ripper.mainRoutine();
@@ -164,7 +166,7 @@ public class RipperMain {
 		
 		
 		// TODO Auto-generated method stub
-		JFCRipperConfiguration configuration = new JFCRipperConfiguration();
+		//JFCRipperConfiguration configuration = new JFCRipperConfiguration();
 		RipperMonitor monitor = new JFCRipperMointor(configuration);
 		ripper.setMonitor(monitor);
 		// Set up IDGenerator
