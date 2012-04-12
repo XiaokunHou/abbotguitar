@@ -24,7 +24,7 @@ import cn.edu.nju.software.util.AppUtil;
 
 public class Ripper {
 
-	OperationConfig config;
+	JFCRipperConfiguration config;
 	static ObjectFactory factory = new ObjectFactory();
 
 	/**
@@ -67,7 +67,7 @@ public class Ripper {
 		lCloseWindowComp = factory.createComponentListType();
 	}
 
-	public Ripper(OperationConfig config) {
+	public Ripper(JFCRipperConfiguration config) {
 		// TODO Auto-generated constructor stub
 		this.config = config;
 	}
