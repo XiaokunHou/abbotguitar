@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="E:/SEAN/workspace/guitar3/lib/platforms/jfc/com.alexmerz.graphviz.jar"/>
+	<classpathentry kind="lib" path="E:/SEAN/workspace/guitar3/lib/platforms/jfc/javacv-linux-x86_64.jar"/>
+	<classpathentry kind="lib" path="E:/SEAN/workspace/guitar3/lib/platforms/jfc/jemmy.jar"/>
+	<classpathentry kind="lib" path="E:/SEAN/workspace/guitar3/lib/platforms/jfc/sikuli-cv-0.0.1-SNAPSHOT-jar-with-dependencies.jar"/>
+	<classpathentry kind="lib" path="E:/SEAN/workspace/guitar3/lib/args4j-2.0.10.jar"/>
+	<classpathentry kind="lib" path="E:/SEAN/workspace/guitar3/lib/asm-3.3.1.jar"/>
+	<classpathentry kind="lib" path="E:/SEAN/workspace/guitar3/lib/cobertura.jar"/>
+	<classpathentry kind="lib" path="E:/SEAN/workspace/guitar3/lib/commons-cli-1.2.jar"/>
+	<classpathentry kind="lib" path="E:/SEAN/workspace/guitar3/lib/commons-io-2.0.1.jar"/>
+	<classpathentry kind="lib" path="E:/SEAN/workspace/guitar3/lib/gexf4j-core-0.2.0-ALPHA.jar"/>
+	<classpathentry kind="lib" path="E:/SEAN/workspace/guitar3/lib/java-getopt-1.0.13.jar"/>
+	<classpathentry kind="lib" path="E:/SEAN/workspace/guitar3/lib/log4j-1.2.15.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
