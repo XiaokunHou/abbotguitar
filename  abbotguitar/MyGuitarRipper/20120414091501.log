@@ -1,0 +1,1828 @@
+0    [main] ERROR edu.umd.cs.guitar.util.GUITARLog  - *** No configuration file. Using an empty one ***
+18738 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Initial waiting: 500ms...
+22970 [main] DEBUG edu.umd.cs.guitar.util.GUITARLog  - Root window size: 1
+22972 [main] DEBUG edu.umd.cs.guitar.util.GUITARLog  - Window title: Radio Button Demo
+24866 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Number of root windows: 1
+27219 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - ------- BEGIN WINDOW -------
+27223 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Ripping window: *Radio Button Demo*
+27565 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 
+27566 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - ----------------------------------
+27568 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Ripping component: 
+27569 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Signature: 
+27570 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Radio Button Demo</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Radio Button Demo</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>Project</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+27593 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Component is Unexpandable
+27597 [main] DEBUG edu.umd.cs.guitar.util.GUITARLog  - *Radio Button Demo* in window *Radio Button Demo* has 1 children: [Pos(3,25) - javax.swing.JRootPane; ]
+27598 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 
+27599 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - ----------------------------------
+27600 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Ripping component: 
+27601 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Signature: 
+27603 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Radio Button Demo</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Pos(3,25)</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>javax.swing.JRootPane</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+27764 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Component is Unexpandable
+27767 [main] DEBUG edu.umd.cs.guitar.util.GUITARLog  - *Pos(3,25)* in window *Radio Button Demo* has 2 children: [null.glassPane - javax.swing.JPanel; null.layeredPane - javax.swing.JLayeredPane; ]
+27768 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 
+27770 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - ----------------------------------
+27771 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Ripping component: 
+27772 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Signature: 
+27774 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Radio Button Demo</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>null.glassPane</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>javax.swing.JPanel</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+27854 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Component is Unexpandable
+27856 [main] DEBUG edu.umd.cs.guitar.util.GUITARLog  - *null.glassPane* in window *Radio Button Demo* has 0 children: []
+27857 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 
+27858 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - ----------------------------------
+27860 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Ripping component: 
+27861 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Signature: 
+27863 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Radio Button Demo</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>null.layeredPane</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>javax.swing.JLayeredPane</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+27951 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Component is Unexpandable
+27957 [main] DEBUG edu.umd.cs.guitar.util.GUITARLog  - *null.layeredPane* in window *Radio Button Demo* has 2 children: [Pos(3,50) - javax.swing.JPanel; Pos(3,25) - javax.swing.JMenuBar; ]
+27958 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 
+27959 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - ----------------------------------
+27961 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Ripping component: 
+27962 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Signature: 
+27964 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Radio Button Demo</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Pos(3,50)</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>javax.swing.JPanel</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+27989 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Component is Unexpandable
+27992 [main] DEBUG edu.umd.cs.guitar.util.GUITARLog  - *Pos(3,50)* in window *Radio Button Demo* has 5 children: [Select Shape - javax.swing.JPanel; Select Fill Color - javax.swing.JPanel; Create Shape - javax.swing.JButton; Reset - javax.swing.JButton; Rendered Shape - javax.swing.JPanel; ]
+27994 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 
+27995 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - ----------------------------------
+27996 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Ripping component: 
+27998 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Signature: 
+27999 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Radio Button Demo</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Select Shape</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>javax.swing.JPanel</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+28020 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Component is Unexpandable
+28022 [main] DEBUG edu.umd.cs.guitar.util.GUITARLog  - *Select Shape* in window *Radio Button Demo* has 2 children: [Circle - javax.swing.JRadioButton; Square - javax.swing.JRadioButton; ]
+28024 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 
+28025 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - ----------------------------------
+28027 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Ripping component: 
+28028 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Signature: 
+28030 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Radio Button Demo</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Circle</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>javax.swing.JRadioButton</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+28324 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Expanding *Circle*...
+28329 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Waiting  500ms for a new window to open
+28999 [main] DEBUG edu.umd.cs.guitar.util.GUITARLog  - *Circle* in window *Radio Button Demo* has 0 children: []
+29002 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 
+29005 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - ----------------------------------
+29007 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Ripping component: 
+29010 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Signature: 
+29014 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Radio Button Demo</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Square</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>javax.swing.JRadioButton</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+29040 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Expanding *Square*...
+29042 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Waiting  500ms for a new window to open
+29781 [main] DEBUG edu.umd.cs.guitar.util.GUITARLog  - !!!!! Window closed
+29785 [main] DEBUG edu.umd.cs.guitar.util.GUITARLog  - 	Radio Button Demo
+29803 [main] DEBUG edu.umd.cs.guitar.util.GUITARLog  - *Square* in window *Radio Button Demo* has 0 children: []
+29805 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 
+29806 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - ----------------------------------
+29808 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Ripping component: 
+29810 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Signature: 
+29813 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Radio Button Demo</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Select Fill Color</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>javax.swing.JPanel</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+29844 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Component is Unexpandable
+29850 [main] DEBUG edu.umd.cs.guitar.util.GUITARLog  - *Select Fill Color* in window *Radio Button Demo* has 3 children: [Color - javax.swing.JRadioButton; None - javax.swing.JRadioButton; Pos(9,148) - javax.swing.JTextField; ]
+29851 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 
+29853 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - ----------------------------------
+29854 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Ripping component: 
+29856 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Signature: 
+29857 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Radio Button Demo</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Color</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>javax.swing.JRadioButton</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+29885 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Expanding *Color*...
+29887 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Waiting  500ms for a new window to open
+30403 [main] DEBUG edu.umd.cs.guitar.util.GUITARLog  - *Color* in window *Radio Button Demo* has 0 children: []
+30407 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 
+30411 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - ----------------------------------
+30415 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Ripping component: 
+30418 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Signature: 
+30422 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Radio Button Demo</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>None</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>javax.swing.JRadioButton</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+30468 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Expanding *None*...
+30471 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Waiting  500ms for a new window to open
+30985 [main] DEBUG edu.umd.cs.guitar.util.GUITARLog  - *None* in window *Radio Button Demo* has 0 children: []
+30989 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 
+30992 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - ----------------------------------
+30996 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Ripping component: 
+31000 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Signature: 
+31005 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Radio Button Demo</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Pos(9,148)</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>javax.swing.JTextField</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+31248 [main] DEBUG edu.umd.cs.guitar.util.GUITARLog  - Component is disabled
+31250 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Component is Unexpandable
+31251 [main] DEBUG edu.umd.cs.guitar.util.GUITARLog  - *Pos(9,148)* in window *Radio Button Demo* has 0 children: []
+31253 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 
+31254 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - ----------------------------------
+31256 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Ripping component: 
+31257 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Signature: 
+31259 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Radio Button Demo</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Create Shape</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>javax.swing.JButton</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+31369 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Expanding *Create Shape*...
+31372 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Waiting  500ms for a new window to open
+31967 [main] DEBUG edu.umd.cs.guitar.util.GUITARLog  - *Create Shape* in window *Radio Button Demo* has 0 children: []
+31971 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 
+31974 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - ----------------------------------
+31978 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Ripping component: 
+31981 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Signature: 
+31986 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Radio Button Demo</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Reset</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>javax.swing.JButton</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+32020 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Expanding *Reset*...
+32022 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Waiting  500ms for a new window to open
+32612 [main] DEBUG edu.umd.cs.guitar.util.GUITARLog  - *Reset* in window *Radio Button Demo* has 0 children: []
+32616 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 
+32620 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - ----------------------------------
+32624 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Ripping component: 
+32627 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Signature: 
+32632 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Radio Button Demo</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Rendered Shape</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>javax.swing.JPanel</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+32662 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Component is Unexpandable
+32664 [main] DEBUG edu.umd.cs.guitar.util.GUITARLog  - *Rendered Shape* in window *Radio Button Demo* has 0 children: []
+32665 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 
+32667 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - ----------------------------------
+32668 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Ripping component: 
+32669 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Signature: 
+32671 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Radio Button Demo</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Pos(3,25)</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>javax.swing.JMenuBar</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+32767 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Component is Unexpandable
+32770 [main] DEBUG edu.umd.cs.guitar.util.GUITARLog  - *Pos(3,25)* in window *Radio Button Demo* has 1 children: [Options - javax.swing.JMenu; ]
+32771 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 
+32772 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - ----------------------------------
+32774 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Ripping component: 
+32775 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Signature: 
+32777 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Radio Button Demo</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Options</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>javax.swing.JMenu</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+33013 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Expanding *Options*...
+33015 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Waiting  500ms for a new window to open
+33551 [main] DEBUG edu.umd.cs.guitar.util.GUITARLog  - *Options* in window *Radio Button Demo* has 3 children: [About - javax.swing.JMenuItem; Shape - javax.swing.JMenu; Color - javax.swing.JMenu; ]
+33555 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 
+33559 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - ----------------------------------
+33563 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Ripping component: 
+33566 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Signature: 
+33571 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Radio Button Demo</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>About</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>javax.swing.JMenuItem</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+33603 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Expanding *About*...
+33604 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Waiting  500ms for a new window to open
+34271 [main] DEBUG edu.umd.cs.guitar.util.GUITARLog  - !!!!! Window closed
+34272 [main] DEBUG edu.umd.cs.guitar.util.GUITARLog  - 	Radio Button Demo
+34285 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 1 new window(s) opened!!!
+34287 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - *	 Title:*About*
+34289 [main] DEBUG edu.umd.cs.guitar.util.GUITARLog  - About recorded
+34290 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - ------- BEGIN WINDOW -------
+34292 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Ripping window: *About*
+34423 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 
+34425 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - ----------------------------------
+34426 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Ripping component: 
+34428 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Signature: 
+34430 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>About</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>About</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>javax.swing.JDialog</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+34448 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Component is Unexpandable
+34450 [main] DEBUG edu.umd.cs.guitar.util.GUITARLog  - *About* in window *About* has 1 children: [Pos(3,25) - javax.swing.JRootPane; ]
+34452 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 
+34454 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - ----------------------------------
+34455 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Ripping component: 
+34457 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Signature: 
+34459 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>About</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Pos(3,25)</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>javax.swing.JRootPane</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+34478 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Component is Unexpandable
+34481 [main] DEBUG edu.umd.cs.guitar.util.GUITARLog  - *Pos(3,25)* in window *About* has 2 children: [null.glassPane - javax.swing.JPanel; null.layeredPane - javax.swing.JLayeredPane; ]
+34482 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 
+34484 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - ----------------------------------
+34486 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Ripping component: 
+34487 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Signature: 
+34489 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>About</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>null.glassPane</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>javax.swing.JPanel</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+34508 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Component is Unexpandable
+34510 [main] DEBUG edu.umd.cs.guitar.util.GUITARLog  - *null.glassPane* in window *About* has 0 children: []
+34511 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 
+34513 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - ----------------------------------
+34515 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Ripping component: 
+34516 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Signature: 
+34518 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>About</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>null.layeredPane</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>javax.swing.JLayeredPane</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+34537 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Component is Unexpandable
+34540 [main] DEBUG edu.umd.cs.guitar.util.GUITARLog  - *null.layeredPane* in window *About* has 1 children: [null.contentPane - javax.swing.JPanel; ]
+34542 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 
+34543 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - ----------------------------------
+34545 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Ripping component: 
+34547 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Signature: 
+34549 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>About</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>null.contentPane</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>javax.swing.JPanel</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+34568 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Component is Unexpandable
+34571 [main] DEBUG edu.umd.cs.guitar.util.GUITARLog  - *null.contentPane* in window *About* has 1 children: [Pos(3,25) - javax.swing.JOptionPane; ]
+34573 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 
+34574 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - ----------------------------------
+34576 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Ripping component: 
+34578 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Signature: 
+34580 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>About</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Pos(3,25)</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>javax.swing.JOptionPane</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+34688 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Component is Unexpandable
+34691 [main] DEBUG edu.umd.cs.guitar.util.GUITARLog  - *Pos(3,25)* in window *About* has 2 children: [Pos(13,35) - javax.swing.JPanel; OptionPane.buttonArea - javax.swing.JPanel; ]
+34693 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 
+34694 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - ----------------------------------
+34696 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Ripping component: 
+34698 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Signature: 
+34701 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>About</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Pos(13,35)</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>javax.swing.JPanel</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+34720 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Component is Unexpandable
+34723 [main] DEBUG edu.umd.cs.guitar.util.GUITARLog  - *Pos(13,35)* in window *About* has 2 children: [OptionPane.realBody - javax.swing.JPanel; OptionPane.iconLabel - javax.swing.JLabel; ]
+34725 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 
+34726 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - ----------------------------------
+34728 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Ripping component: 
+34730 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Signature: 
+34733 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>About</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>OptionPane.realBody</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>javax.swing.JPanel</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+34752 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Component is Unexpandable
+34754 [main] DEBUG edu.umd.cs.guitar.util.GUITARLog  - *OptionPane.realBody* in window *About* has 2 children: [OptionPane.separator - javax.swing.JPanel; OptionPane.body - javax.swing.JPanel; ]
+34757 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 
+34759 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - ----------------------------------
+34761 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Ripping component: 
+34763 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Signature: 
+34766 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>About</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>OptionPane.separator</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>javax.swing.JPanel</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+34785 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Component is Unexpandable
+34787 [main] DEBUG edu.umd.cs.guitar.util.GUITARLog  - *OptionPane.separator* in window *About* has 0 children: []
+34792 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 
+34794 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - ----------------------------------
+34796 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Ripping component: 
+34798 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Signature: 
+34803 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>About</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>OptionPane.body</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>javax.swing.JPanel</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+34822 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Component is Unexpandable
+34824 [main] DEBUG edu.umd.cs.guitar.util.GUITARLog  - *OptionPane.body* in window *About* has 4 children: [This program draws circles and squares. - javax.swing.JLabel; To draw a shape, click the create shape button. - javax.swing.JLabel; The shape may be changed using the - javax.swing.JLabel; on screen buttons or the options menu. - javax.swing.JLabel; ]
+34827 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 
+34829 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - ----------------------------------
+34831 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Ripping component: 
+34833 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Signature: 
+34835 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>About</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>This program draws circles and squares.</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>javax.swing.JLabel</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+34929 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Component is Unexpandable
+34931 [main] DEBUG edu.umd.cs.guitar.util.GUITARLog  - *This program draws circles and squares.* in window *About* has 0 children: []
+34934 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 
+34935 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - ----------------------------------
+34937 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Ripping component: 
+34939 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Signature: 
+34942 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>About</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>To draw a shape, click the create shape button.</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>javax.swing.JLabel</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+34961 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Component is Unexpandable
+34963 [main] DEBUG edu.umd.cs.guitar.util.GUITARLog  - *To draw a shape, click the create shape button.* in window *About* has 0 children: []
+34965 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 
+34967 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - ----------------------------------
+34969 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Ripping component: 
+34972 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Signature: 
+34974 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>About</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>The shape may be changed using the</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>javax.swing.JLabel</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+34993 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Component is Unexpandable
+34996 [main] DEBUG edu.umd.cs.guitar.util.GUITARLog  - *The shape may be changed using the* in window *About* has 0 children: []
+34998 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 
+35000 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - ----------------------------------
+35002 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Ripping component: 
+35004 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Signature: 
+35006 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>About</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>on screen buttons or the options menu.</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>javax.swing.JLabel</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+35026 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Component is Unexpandable
+35028 [main] DEBUG edu.umd.cs.guitar.util.GUITARLog  - *on screen buttons or the options menu.* in window *About* has 0 children: []
+35030 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 
+35032 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - ----------------------------------
+35034 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Ripping component: 
+35036 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Signature: 
+35039 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>About</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>OptionPane.iconLabel</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>javax.swing.JLabel</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+35062 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Component is Unexpandable
+35066 [main] DEBUG edu.umd.cs.guitar.util.GUITARLog  - *OptionPane.iconLabel* in window *About* has 0 children: []
+35068 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 
+35070 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - ----------------------------------
+35072 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Ripping component: 
+35073 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Signature: 
+35076 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>About</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>OptionPane.buttonArea</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>javax.swing.JPanel</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+35096 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Component is Unexpandable
+35098 [main] DEBUG edu.umd.cs.guitar.util.GUITARLog  - *OptionPane.buttonArea* in window *About* has 1 children: [确定 - javax.swing.JButton; ]
+35100 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 
+35102 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - ----------------------------------
+35104 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Ripping component: 
+35106 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Signature: 
+35108 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>About</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>确定</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>javax.swing.JButton</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+35131 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Expanding *确定*...
+35133 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Waiting  500ms for a new window to open
+35732 [main] DEBUG edu.umd.cs.guitar.util.GUITARLog  - !!!!! Window closed
+35737 [main] DEBUG edu.umd.cs.guitar.util.GUITARLog  - *确定* in window *About* has 0 children: []
+35743 [main] DEBUG edu.umd.cs.guitar.util.GUITARLog  - *About* in window *Radio Button Demo* has 0 children: []
+35746 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 
+35748 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - ----------------------------------
+35751 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Ripping component: 
+35754 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Signature: 
+35757 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Radio Button Demo</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Shape</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>javax.swing.JMenu</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+35785 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Expanding *Shape*...
+35786 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Waiting  500ms for a new window to open
+36347 [main] DEBUG edu.umd.cs.guitar.util.GUITARLog  - *Shape* in window *Radio Button Demo* has 2 children: [Circle - javax.swing.JRadioButtonMenuItem; Square - javax.swing.JRadioButtonMenuItem; ]
+36351 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 
+36355 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - ----------------------------------
+36359 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Ripping component: 
+36363 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Signature: 
+36368 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Radio Button Demo</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Circle</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>javax.swing.JRadioButtonMenuItem</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+36484 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Expanding *Circle*...
+36486 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Waiting  500ms for a new window to open
+36999 [main] DEBUG edu.umd.cs.guitar.util.GUITARLog  - *Circle* in window *Radio Button Demo* has 0 children: []
+37003 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 
+37006 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - ----------------------------------
+37010 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Ripping component: 
+37014 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Signature: 
+37019 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Radio Button Demo</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Square</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>javax.swing.JRadioButtonMenuItem</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+37067 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Expanding *Square*...
+37069 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Waiting  500ms for a new window to open
+37575 [main] DEBUG edu.umd.cs.guitar.util.GUITARLog  - *Square* in window *Radio Button Demo* has 0 children: []
+37579 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 
+37582 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - ----------------------------------
+37586 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Ripping component: 
+37590 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Signature: 
+37595 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Radio Button Demo</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Color</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>javax.swing.JMenu</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+37627 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Expanding *Color*...
+37629 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Waiting  500ms for a new window to open
+38177 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 0 new window(s) opened!!!
+38184 [main] DEBUG edu.umd.cs.guitar.util.GUITARLog  - *Color* in window *Radio Button Demo* has 15 children: [None - javax.swing.JRadioButtonMenuItem; Pos(1,26) - javax.swing.JPopupMenu$Separator; Black - javax.swing.JRadioButtonMenuItem; Blue - javax.swing.JRadioButtonMenuItem; Cyan - javax.swing.JRadioButtonMenuItem; Dark Gray - javax.swing.JRadioButtonMenuItem; Gray - javax.swing.JRadioButtonMenuItem; Green - javax.swing.JRadioButtonMenuItem; Light Gray - javax.swing.JRadioButtonMenuItem; Magenta - javax.swing.JRadioButtonMenuItem; Orange - javax.swing.JRadioButtonMenuItem; Pink - javax.swing.JRadioButtonMenuItem; Red - javax.swing.JRadioButtonMenuItem; White - javax.swing.JRadioButtonMenuItem; Yellow - javax.swing.JRadioButtonMenuItem; ]
+38187 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 
+38190 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - ----------------------------------
+38192 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Ripping component: 
+38195 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Signature: 
+38198 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Radio Button Demo</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>None</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>javax.swing.JRadioButtonMenuItem</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+38221 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Expanding *None*...
+38223 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Waiting  500ms for a new window to open
+38736 [main] DEBUG edu.umd.cs.guitar.util.GUITARLog  - *None* in window *Radio Button Demo* has 0 children: []
+38740 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 
+38743 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - ----------------------------------
+38746 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Ripping component: 
+38748 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Signature: 
+38752 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Radio Button Demo</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Pos(1,26)</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>javax.swing.JPopupMenu$Separator</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+38910 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Component is Unexpandable
+38913 [main] DEBUG edu.umd.cs.guitar.util.GUITARLog  - *Pos(1,26)* in window *Radio Button Demo* has 0 children: []
+38914 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 
+38916 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - ----------------------------------
+38917 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Ripping component: 
+38919 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Signature: 
+38921 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Radio Button Demo</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Black</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>javax.swing.JRadioButtonMenuItem</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+38943 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Expanding *Black*...
+38945 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Waiting  500ms for a new window to open
+39458 [main] DEBUG edu.umd.cs.guitar.util.GUITARLog  - *Black* in window *Radio Button Demo* has 0 children: []
+39461 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 
+39464 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - ----------------------------------
+39466 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Ripping component: 
+39469 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Signature: 
+39473 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Radio Button Demo</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Blue</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>javax.swing.JRadioButtonMenuItem</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+39510 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Expanding *Blue*...
+39513 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Waiting  500ms for a new window to open
+40028 [main] DEBUG edu.umd.cs.guitar.util.GUITARLog  - *Blue* in window *Radio Button Demo* has 0 children: []
+40031 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 
+40035 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - ----------------------------------
+40039 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Ripping component: 
+40043 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Signature: 
+40048 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Radio Button Demo</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Cyan</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>javax.swing.JRadioButtonMenuItem</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+40087 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Expanding *Cyan*...
+40090 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Waiting  500ms for a new window to open
+40603 [main] DEBUG edu.umd.cs.guitar.util.GUITARLog  - *Cyan* in window *Radio Button Demo* has 0 children: []
+40606 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 
+40610 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - ----------------------------------
+40614 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Ripping component: 
+40618 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Signature: 
+40623 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Radio Button Demo</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Dark Gray</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>javax.swing.JRadioButtonMenuItem</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+40668 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Expanding *Dark Gray*...
+40670 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Waiting  500ms for a new window to open
+41183 [main] DEBUG edu.umd.cs.guitar.util.GUITARLog  - *Dark Gray* in window *Radio Button Demo* has 0 children: []
+41187 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 
+41191 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - ----------------------------------
+41196 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Ripping component: 
+41200 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Signature: 
+41203 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Radio Button Demo</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Gray</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>javax.swing.JRadioButtonMenuItem</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+41232 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Expanding *Gray*...
+41234 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Waiting  500ms for a new window to open
+41747 [main] DEBUG edu.umd.cs.guitar.util.GUITARLog  - *Gray* in window *Radio Button Demo* has 0 children: []
+41750 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 
+41754 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - ----------------------------------
+41758 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Ripping component: 
+41762 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Signature: 
+41767 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Radio Button Demo</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Green</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>javax.swing.JRadioButtonMenuItem</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+41791 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Expanding *Green*...
+41792 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Waiting  500ms for a new window to open
+42305 [main] DEBUG edu.umd.cs.guitar.util.GUITARLog  - *Green* in window *Radio Button Demo* has 0 children: []
+42309 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 
+42312 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - ----------------------------------
+42315 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Ripping component: 
+42317 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Signature: 
+42320 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Radio Button Demo</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Light Gray</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>javax.swing.JRadioButtonMenuItem</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+42350 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Expanding *Light Gray*...
+42352 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Waiting  500ms for a new window to open
+42861 [main] DEBUG edu.umd.cs.guitar.util.GUITARLog  - *Light Gray* in window *Radio Button Demo* has 0 children: []
+42864 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 
+42868 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - ----------------------------------
+42872 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Ripping component: 
+42876 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Signature: 
+42881 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Radio Button Demo</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Magenta</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>javax.swing.JRadioButtonMenuItem</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+42910 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Expanding *Magenta*...
+42912 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Waiting  500ms for a new window to open
+43426 [main] DEBUG edu.umd.cs.guitar.util.GUITARLog  - *Magenta* in window *Radio Button Demo* has 0 children: []
+43430 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 
+43434 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - ----------------------------------
+43438 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Ripping component: 
+43442 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Signature: 
+43446 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Radio Button Demo</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Orange</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>javax.swing.JRadioButtonMenuItem</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+43470 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Expanding *Orange*...
+43472 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Waiting  500ms for a new window to open
+43985 [main] DEBUG edu.umd.cs.guitar.util.GUITARLog  - *Orange* in window *Radio Button Demo* has 0 children: []
+43986 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 
+43988 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - ----------------------------------
+43989 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Ripping component: 
+43991 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Signature: 
+43993 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Radio Button Demo</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Pink</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>javax.swing.JRadioButtonMenuItem</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+44014 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Expanding *Pink*...
+44016 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Waiting  500ms for a new window to open
+44520 [main] DEBUG edu.umd.cs.guitar.util.GUITARLog  - *Pink* in window *Radio Button Demo* has 0 children: []
+44522 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 
+44525 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - ----------------------------------
+44528 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Ripping component: 
+44530 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Signature: 
+44534 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Radio Button Demo</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Red</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>javax.swing.JRadioButtonMenuItem</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+44567 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Expanding *Red*...
+44568 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Waiting  500ms for a new window to open
+45072 [main] DEBUG edu.umd.cs.guitar.util.GUITARLog  - *Red* in window *Radio Button Demo* has 0 children: []
+45075 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 
+45079 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - ----------------------------------
+45083 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Ripping component: 
+45087 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Signature: 
+45092 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Radio Button Demo</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>White</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>javax.swing.JRadioButtonMenuItem</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+45119 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Expanding *White*...
+45122 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Waiting  500ms for a new window to open
+45639 [main] DEBUG edu.umd.cs.guitar.util.GUITARLog  - *White* in window *Radio Button Demo* has 0 children: []
+45642 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 
+45645 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - ----------------------------------
+45648 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Ripping component: 
+45650 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Signature: 
+45653 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - 
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Radio Button Demo</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Yellow</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>javax.swing.JRadioButtonMenuItem</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+45682 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Expanding *Yellow*...
+45684 [main] INFO  edu.umd.cs.guitar.util.GUITARLog  - Waiting  500ms for a new window to open
+46197 [main] DEBUG edu.umd.cs.guitar.util.GUITARLog  - *Yellow* in window *Radio Button Demo* has 0 children: []
