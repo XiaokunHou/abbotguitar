@@ -1,4 +1,29 @@
-package cn.edu.nju.software.ripperCore;
+/*
+ *  Copyright (c) 2009-@year@. The  GUITAR group  at the University of
+ *  Maryland. Names of owners of this group may be obtained by sending
+ *  an e-mail to atif@cs.umd.edu
+ *
+ *  Permission is hereby granted, free of charge, to any person obtaining
+ *  a copy of this software and associated documentation files
+ *  (the "Software"), to deal in the Software without restriction,
+ *  including without limitation  the rights to use, copy, modify, merge,
+ *  publish,  distribute, sublicense, and/or sell copies of the Software,
+ *  and to  permit persons  to whom  the Software  is furnished to do so,
+ *  subject to the following conditions:
+ *
+ *  The above copyright notice and this permission notice shall be included
+ *  in all copies or substantial portions of the Software.
+ *
+ *  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+ *  OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+ *  MERCHANTABILITY,  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+ *  IN NO  EVENT SHALL THE  AUTHORS OR COPYRIGHT  HOLDERS BE LIABLE FOR ANY
+ *  CLAIM, DAMAGES OR  OTHER LIABILITY,  WHETHER IN AN  ACTION OF CONTRACT,
+ *  TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+ *  SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+ */
+
+package cn.edu.nju.software.ripper.core;
 
 import java.awt.AWTEvent;
 import java.awt.AWTException;
@@ -17,10 +42,8 @@ import java.io.File;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
-import java.util.Set;
 
 import javax.accessibility.AccessibleAction;
 import javax.accessibility.AccessibleContext;
@@ -29,22 +52,22 @@ import javax.imageio.ImageIO;
 
 import org.netbeans.jemmy.EventTool;
 
-import cn.edu.nju.software.GuitarModule.GApplication;
-import cn.edu.nju.software.GuitarModule.GComponent;
-import cn.edu.nju.software.GuitarModule.GUITARConstants;
-import cn.edu.nju.software.GuitarModule.GWindow;
-import cn.edu.nju.software.GuitarModule.JFCApplication;
-import cn.edu.nju.software.GuitarModule.JFCConstants;
-import cn.edu.nju.software.GuitarModule.JFCXComponent;
-import cn.edu.nju.software.GuitarModule.JFCXWindow;
-import cn.edu.nju.software.event.EventManager;
-import cn.edu.nju.software.event.GEvent;
-import cn.edu.nju.software.event.JFCActionEDT;
-import cn.edu.nju.software.event.JFCEventHandler;
-import cn.edu.nju.software.exception.ApplicationConnectException;
+import cn.edu.nju.software.GuitarModule.*;
+import cn.edu.nju.software.GuitarWrapper.*;
+import cn.edu.nju.software.ripper.filter.*;
+import cn.edu.nju.software.ripperModuleData.*;
+import cn.edu.nju.software.util.*;
 
 
-public class RipperMonitor {
+/**
+ * 
+ * Monitor for the ripper to handle Java Swing specific features
+ * 
+ * @see GRipperMonitor
+ * 
+ * @author <a href="mailto:baonn@cs.umd.edu"> Bao Nguyen </a>
+ */
+public class JFCRipperMointor extends GRipperMonitor {
 
 	// --------------------------
 	// Configuartion Parameters
@@ -59,13 +82,6 @@ public class RipperMonitor {
 	JFCRipperConfiguration configuration;
 
 	List<String> sIgnoreWindowList = new ArrayList<String>();
-	
-	  /**
-     * 
-     * List of windows ripped
-     * 
-     */
-    volatile Set<String> lRippedWindow = new HashSet<String>();
 
 	/**
 	 * Constructor
@@ -75,7 +91,7 @@ public class RipperMonitor {
 	 * @param configuration
 	 *            ripper configuration
 	 */
-	public RipperMonitor(JFCRipperConfiguration configuration) {
+	public JFCRipperMointor(JFCRipperConfiguration configuration) {
 		super();
 		// this.logger = logger;
 		this.configuration = configuration;
@@ -97,8 +113,9 @@ public class RipperMonitor {
 	/*
 	 * (non-Javadoc)
 	 * 
-	 * @see ..guitar.ripper.RipperMonitor#cleanUp()
+	 * @see edu.umd.cs.guitar.ripper.RipperMonitor#cleanUp()
 	 */
+	@Override
 	public void cleanUp() {
 		// Debugger.pause("Clean up pause....");
 	}
@@ -107,9 +124,10 @@ public class RipperMonitor {
 	 * (non-Javadoc)
 	 * 
 	 * @see
-	 * ..guitar.ripper.RipperMonitor#closeWindow(..guitar.
+	 * edu.umd.cs.guitar.ripper.RipperMonitor#closeWindow(edu.umd.cs.guitar.
 	 * model.GXWindow)
 	 */
+	@Override
 	public void closeWindow(GWindow gWindow) {
 
 		JFCXWindow jWindow = (JFCXWindow) gWindow;
@@ -120,45 +138,27 @@ public class RipperMonitor {
 		window.dispose();
 
 	}
-	
-	/**
-	 * checks for the rippedWindow
-	 * @param window
-	 * @return ripped windowName
-	 */
-    public boolean isRippedWindow(GWindow window) {
-        String sWindowName = window.getTitle();
-        return (lRippedWindow.contains(sWindowName));
-    }
-
-	/**
-	 * Adds the ripped winodws to ripped window list
-	 * @param window
-	 */
-    public void addRippedList(GWindow window) {
-        String windowTitle = window.getTitle();
-        this.lRippedWindow.add(windowTitle);
-    }
 
 	/*
 	 * (non-Javadoc)
 	 * 
 	 * @see
-	 * ..guitar.ripper.RipperMonitor#expand(..guitar.model
+	 * edu.umd.cs.guitar.ripper.RipperMonitor#expand(edu.umd.cs.guitar.model
 	 * .GXComponent)
 	 */
+	@Override
 	public void expandGUI(GComponent component) {
 
 		if (component == null)
 			return;
 
-		System.out.println("Expanding *" + component.getTitle() + "*...");
+		GUITARLog.log.info("Expanding *" + component.getTitle() + "*...");
 
 		// GThreadEvent action = new JFCActionHandler();
 		GEvent action = new JFCActionEDT();
 
 		action.perform(component, null);
-		System.out.println("Waiting  " + configuration.DELAY
+		GUITARLog.log.info("Waiting  " + configuration.DELAY
 				+ "ms for a new window to open");
 
 		new EventTool().waitNoEvent(configuration.DELAY);
@@ -167,8 +167,9 @@ public class RipperMonitor {
 	/*
 	 * (non-Javadoc)
 	 * 
-	 * @see ..guitar.ripper.RipperMonitor#getOpenedWindowCache()
+	 * @see edu.umd.cs.guitar.ripper.RipperMonitor#getOpenedWindowCache()
 	 */
+	@Override
 	public LinkedList<GWindow> getOpenedWindowCache() {
 
 		LinkedList<GWindow> retWindows = new LinkedList<GWindow>();
@@ -181,6 +182,7 @@ public class RipperMonitor {
 		return retWindows;
 	}
 
+	@Override
 	public LinkedList<GWindow> getClosedWindowCache() {
 
 		LinkedList<GWindow> retWindows = new LinkedList<GWindow>();
@@ -196,21 +198,19 @@ public class RipperMonitor {
 	/*
 	 * (non-Javadoc)
 	 * 
-	 * @see ..guitar.ripper.RipperMonitor#getRootWindows()
+	 * @see edu.umd.cs.guitar.ripper.RipperMonitor#getRootWindows()
 	 */
+	@Override
 	public List<GWindow> getRootWindows() {
 
 		List<GWindow> retWindowList = new ArrayList<GWindow>();
 
 		retWindowList.clear();
 
-//		Hierarchy hierarchy=AWTHierarchy.getDefault();
-//		Collection roots=hierarchy.getRoots();
+		Frame[] lFrames = Frame.getFrames();
 
-		Frame[] roots = Frame.getFrames();
+		for (Frame frame : lFrames) {
 
-		for (Object frame1 : roots) {
-				Frame frame=(Frame)frame1;
 			if (!isValidRootWindow(frame))
 				continue;
 
@@ -227,15 +227,15 @@ public class RipperMonitor {
 		}
 
 		// / Debugs:
-		System.out.println("Root window size: " + retWindowList.size());
+		GUITARLog.log.debug("Root window size: " + retWindowList.size());
 		for (GWindow window : retWindowList) {
-			System.out.println("Window title: " + window.getTitle());
+			GUITARLog.log.debug("Window title: " + window.getTitle());
 		}
 
 		try {
 			Thread.sleep(50);
 		} catch (InterruptedException e) {
-			System.out.println(e);
+			GUITARLog.log.error(e);
 		}
 		return retWindowList;
 	}
@@ -272,9 +272,10 @@ public class RipperMonitor {
 	 * (non-Javadoc)
 	 * 
 	 * @see
-	 * ..guitar.ripper.RipperMonitor#isExpandable(..guitar
-	 * .model.GXComponent, ..guitar.model.GXWindow)
+	 * edu.umd.cs.guitar.ripper.RipperMonitor#isExpandable(edu.umd.cs.guitar
+	 * .model.GXComponent, edu.umd.cs.guitar.model.GXWindow)
 	 */
+	@Override
 	boolean isExpandable(GComponent gComponent, GWindow window) {
 
 		JFCXComponent jComponent = (JFCXComponent) gComponent;
@@ -294,7 +295,7 @@ public class RipperMonitor {
 			return false;
 
 		if (!gComponent.isEnable()) {
-			System.out.println("Component is disabled");
+			GUITARLog.log.debug("Component is disabled");
 			return false;
 		}
 
@@ -344,9 +345,10 @@ public class RipperMonitor {
 	 * (non-Javadoc)
 	 * 
 	 * @see
-	 * ..guitar.ripper.RipperMonitor#isIgnoredWindow(..guitar
+	 * edu.umd.cs.guitar.ripper.RipperMonitor#isIgnoredWindow(edu.umd.cs.guitar
 	 * .model.GXWindow)
 	 */
+	@Override
 	public boolean isIgnoredWindow(GWindow window) {
 		String sWindow = window.getTitle();
 		// TODO: Ignore template
@@ -356,8 +358,9 @@ public class RipperMonitor {
 	/*
 	 * (non-Javadoc)
 	 * 
-	 * @see ..guitar.ripper.RipperMonitor#isNewWindowOpened()
+	 * @see edu.umd.cs.guitar.ripper.RipperMonitor#isNewWindowOpened()
 	 */
+	@Override
 	public boolean isNewWindowOpened() {
 		return (tempOpenedWinStack.size() > 0);
 		// return (tempGWinStack.size() > 0);
@@ -366,8 +369,9 @@ public class RipperMonitor {
 	/*
 	 * (non-Javadoc)
 	 * 
-	 * @see ..guitar.ripper.RipperMonitor#resetWindowCache()
+	 * @see edu.umd.cs.guitar.ripper.RipperMonitor#resetWindowCache()
 	 */
+	@Override
 	public void resetWindowCache() {
 		this.tempOpenedWinStack.clear();
 		this.tempClosedWinStack.clear();
@@ -422,8 +426,9 @@ public class RipperMonitor {
 	/*
 	 * (non-Javadoc)
 	 * 
-	 * @see ..guitar.ripper.RipperMonitor#setUp()
+	 * @see edu.umd.cs.guitar.ripper.RipperMonitor#setUp()
 	 */
+	@Override
 	public void setUp() {
 
 		// Registering default supported events
@@ -458,7 +463,7 @@ public class RipperMonitor {
 						.forName(sEvent);
 				em.registerEvent(cEvent.newInstance());
 			} catch (ClassNotFoundException e) {
-				System.out.println(e);
+				GUITARLog.log.error(e);
 			} catch (InstantiationException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -482,8 +487,8 @@ public class RipperMonitor {
 			else
 				URLs = new String[0];
 
-			application = new JFCApplication(JFCRipperConfiguration.MAIN_CLASS,
-					JFCRipperConfiguration.USE_JAR, URLs);
+			application = new JFCApplication(JFCRipperConfiguration.MAIN_CLASS, JFCRipperConfiguration.USE_JAR,
+					URLs);
 
 			// Parsing arguments
 			String[] args;
@@ -497,24 +502,24 @@ public class RipperMonitor {
 
 			// Delay
 			try {
-				System.out
-						.println("Initial waiting: "
+				GUITARLog.log
+						.info("Initial waiting: "
 								+ JFCRipperConfiguration.INITIAL_WAITING_TIME
 								+ "ms...");
 				Thread.sleep(JFCRipperConfiguration.INITIAL_WAITING_TIME);
 			} catch (InterruptedException e) {
-				System.out.println(e);
+				GUITARLog.log.error(e);
 			}
 
 		} catch (ClassNotFoundException e) {
 			// TODO Auto-generated catch block
-			System.out.println(e);
+			GUITARLog.log.error(e);
 		} catch (ApplicationConnectException e) {
 			// TODO Auto-generated catch block
-			System.out.println(e);
+			GUITARLog.log.error(e);
 		} catch (MalformedURLException e) {
 			// TODO Auto-generated catch block
-			System.out.println(e);
+			GUITARLog.log.error(e);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -545,42 +550,49 @@ public class RipperMonitor {
 	/*
 	 * (non-Javadoc)
 	 * 
-	 * @see ..guitar.ripper.GRipperMonitor#isWindowClose()
+	 * @see edu.umd.cs.guitar.ripper.GRipperMonitor#isWindowClose()
 	 */
-	public boolean isWindowClosed() {
+	@Override
+	public boolean isWindowClosed()
+   {
 		return (tempClosedWinStack.size() > 0);
 	}
 
-	/**
-	 * Captures the image of a GUITAR GUI component and saves it to a the
-	 * specified image file.
-	 * 
-	 * @param component
-	 *            GUITAR component to capture
-	 * @param strFilePath
-	 *            File path name to store the image (w/o extension)
-	 * @return void
-	 */
-	public void captureImage(GComponent component, String strFilePath)
-			throws AWTException, IOException {
-		Robot robot;
 
-		try {
+   /**
+    * Captures the image of a GUITAR GUI component
+    * and saves it to a the specified image file.
+    *
+    * @param  component     GUITAR component to capture
+    * @param  strFilePath   File path name to store the image
+    *                          (w/o extension)
+    * @return void
+    */
+   @Override
+	public void
+   captureImage(GComponent component,
+                String strFilePath)
+   throws AWTException, IOException
+	{
+		Robot robot;
+	
+	 	try {
 			robot = new Robot();
 
-			JFCXComponent gComp = (JFCXComponent) component;
+			JFCXComponent gComp = (JFCXComponent ) component;
 			Component comp = gComp.getComponent();
 
 			// Bail out if component is not really displayed on screen
 			if (!comp.isShowing()) {
 				throw new AWTException("Component is not visible");
 			}
-
+	
 			Point pos = comp.getLocationOnScreen();
 			Dimension dim = comp.getSize();
 
 			// Ignore non-visible components
-			if (dim.getHeight() == 0 || dim.getWidth() == 0) {
+			if (dim.getHeight() == 0 ||
+			    dim.getWidth() == 0) {
 				throw new AWTException("Width or height is 0");
 			}
 
@@ -589,12 +601,12 @@ public class RipperMonitor {
 			BufferedImage screenshot = robot.createScreenCapture(bounder);
 			File outputfile = new File(strFilePath + ".png");
 			ImageIO.write(screenshot, "png", outputfile);
-
+	
 		} catch (IOException e) {
-			throw e;
+	      throw e;
 		} catch (AWTException e) {
-			throw e;
+	      throw e;
 		}
 	}
 
-}
+} // End of class

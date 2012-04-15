@@ -43,10 +43,11 @@ public class RipperMain {
 		String mainClass = "Project";
 		String mainMethod = "main";
 		String argument = "";
-		// String path = "E:\\SEAN\\workspace\\AUT2.jar";
-		// String mainClass = "Example2Frame";
-		// String mainMethod = "main";
-		// String argument = "";
+//		 String path = "E:\\SEAN\\workspace\\AUT2.jar";
+//		 String mainClass = "Example2Frame";
+//		 String mainMethod = "main";
+//		 String argument = "";
+		 String config="E:\\SEAN\\jfc-guitar-v1.1.1\\jfc-aut\\RadioButton\\guitar-config\\configuration.xml";
 
 		Launch launch = new Launch(path, mainClass, mainMethod, argument);
 		launch.autLaunch();
@@ -56,7 +57,7 @@ public class RipperMain {
 		configuration = new JFCRipperConfiguration();
 		ripper = new Ripper(configuration);
 
-		setupEnv();
+		setupEnv(config);
 		ripper.mainRoutine();
 
 		GUIStructure dGUIStructure = ripper.getResult();
@@ -84,7 +85,7 @@ public class RipperMain {
 		System.out.println("Ripping Elapsed: " + df.format(nDuration));
 	}
 
-	private void setupEnv() {
+	private void setupEnv(String confXML) {
 		// --------------------------
 				// Terminal list
 
@@ -94,12 +95,12 @@ public class RipperMain {
 
 				try {
 					conf = (Configuration) IO.readObjFromFile(
-							JFCRipperConfiguration.CONFIG_FILE, Configuration.class);
+							confXML, Configuration.class);
 
 					if (conf == null) {
 						InputStream in = getClass()
 								.getClassLoader()
-								.getResourceAsStream(JFCRipperConfiguration.CONFIG_FILE);
+								.getResourceAsStream(confXML);
 						conf = (Configuration) IO.readObjFromFile(in,
 								Configuration.class);
 					}
@@ -128,7 +129,7 @@ public class RipperMain {
 					}
 				}
 
-				//GRipperMonitor jMonitor = new JFCRipperMointor(CONFIG);
+				//GRipperMonitor jMonitor = new JFCRipperMointor(configuration);
 
 				List<FullComponentType> lIgnoredComps = new ArrayList<FullComponentType>();
 
