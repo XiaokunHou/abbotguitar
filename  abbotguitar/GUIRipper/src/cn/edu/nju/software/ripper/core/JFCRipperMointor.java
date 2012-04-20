@@ -52,11 +52,20 @@ import javax.imageio.ImageIO;
 
 import org.netbeans.jemmy.EventTool;
 
-import cn.edu.nju.software.GuitarModule.*;
-import cn.edu.nju.software.GuitarWrapper.*;
-import cn.edu.nju.software.ripper.filter.*;
-import cn.edu.nju.software.ripperModuleData.*;
-import cn.edu.nju.software.util.*;
+import cn.edu.nju.software.GuitarModule.GApplication;
+import cn.edu.nju.software.GuitarModule.GComponent;
+import cn.edu.nju.software.GuitarModule.GUITARConstants;
+import cn.edu.nju.software.GuitarModule.GWindow;
+import cn.edu.nju.software.GuitarModule.JFCApplication;
+import cn.edu.nju.software.GuitarModule.JFCConstants;
+import cn.edu.nju.software.GuitarModule.JFCXComponent;
+import cn.edu.nju.software.GuitarModule.JFCXWindow;
+import cn.edu.nju.software.event.EventManager;
+import cn.edu.nju.software.event.GEvent;
+import cn.edu.nju.software.event.JFCActionEDT;
+import cn.edu.nju.software.event.JFCEventHandler;
+import cn.edu.nju.software.exception.ApplicationConnectException;
+import cn.edu.nju.software.util.GUITARLog;
 
 
 /**
@@ -65,7 +74,7 @@ import cn.edu.nju.software.util.*;
  * 
  * @see GRipperMonitor
  * 
- * @author <a href="mailto:baonn@cs.umd.edu"> Bao Nguyen </a>
+ * @author   </a>
  */
 public class JFCRipperMointor extends GRipperMonitor {
 
@@ -513,6 +522,7 @@ public class JFCRipperMointor extends GRipperMonitor {
 
 		} catch (ClassNotFoundException e) {
 			// TODO Auto-generated catch block
+			e.printStackTrace();
 			GUITARLog.log.error(e);
 		} catch (ApplicationConnectException e) {
 			// TODO Auto-generated catch block

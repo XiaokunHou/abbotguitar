@@ -490,6 +490,6 @@ public class Ripper {
 			lComponentFilter = new LinkedList<GComponentFilter>();
 		}
 		lComponentFilter.addLast(filter);
-		filter.setRipper(this);
+		//filter.setRipper(this);
 	}
 }

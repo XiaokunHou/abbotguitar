@@ -14,4 +14,11 @@
 	<natures>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>AUT</name>
+			<type>2</type>
+			<location>E:/SEAN/jfc-guitar-v1.1.1/jfc-aut/RadioButton/bin</location>
+		</link>
+	</linkedResources>
 </projectDescription>
