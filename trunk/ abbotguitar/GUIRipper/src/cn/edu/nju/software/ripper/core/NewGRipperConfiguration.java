@@ -6,7 +6,9 @@ import org.apache.commons.cli.PosixParser;
 import org.apache.commons.cli.ParseException;
 import org.apache.commons.cli.HelpFormatter;
 
-import edu.umd.cs.guitar.util.Util;
+import cn.edu.nju.software.util.Util;
+
+
 
 public class NewGRipperConfiguration {
 

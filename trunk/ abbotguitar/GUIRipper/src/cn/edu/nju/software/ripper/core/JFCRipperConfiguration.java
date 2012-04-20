@@ -26,7 +26,9 @@ package cn.edu.nju.software.ripper.core;
 
 import org.kohsuke.args4j.Option;
 
-import edu.umd.cs.guitar.util.Util;
+import cn.edu.nju.software.util.Util;
+
+
 
 /**
  * Class contains the runtime configurations of GUITAR's JFC Ripper
@@ -34,7 +36,7 @@ import edu.umd.cs.guitar.util.Util;
  * 
  * <p>
  * 
- * @author <a href="mailto:baonn@cs.umd.edu"> Bao Nguyen </a>
+ * @author   </a>
  */
 public class JFCRipperConfiguration extends GRipperConfiguration
 {

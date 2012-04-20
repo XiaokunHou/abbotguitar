@@ -21,7 +21,8 @@ package cn.edu.nju.software.ripper.filter;
 
 import cn.edu.nju.software.GuitarModule.GComponent;
 import cn.edu.nju.software.GuitarModule.GWindow;
-import cn.edu.nju.software.ripperCore.Ripper;
+
+import cn.edu.nju.software.ripper.core.Ripper;
 import cn.edu.nju.software.ripperModuleData.ComponentType;
 
 
@@ -52,5 +53,10 @@ public abstract class GComponentFilter {
 	public abstract boolean isProcess(GComponent component, GWindow window );
 	
 	public abstract ComponentType ripComponent(GComponent component, GWindow window);
+
+//	public void setRipper(cn.edu.nju.software.ripperCore.Ripper ripper) {
+//		// TODO Auto-generated method stub
+//		this.ripper = ripper;
+//	}
 
 }

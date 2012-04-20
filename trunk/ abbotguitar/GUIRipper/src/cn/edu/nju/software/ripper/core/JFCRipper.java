@@ -35,6 +35,8 @@ import java.util.TimeZone;
 import org.kohsuke.args4j.CmdLineException;
 
 import cn.edu.nju.software.GuitarModule.*;
+import cn.edu.nju.software.GuitarWrapper.AttributesTypeWrapper;
+import cn.edu.nju.software.GuitarWrapper.ComponentTypeWrapper;
 import cn.edu.nju.software.ripper.filter.*;
 import cn.edu.nju.software.ripperModuleData.*;
 import cn.edu.nju.software.util.*;
@@ -45,7 +47,7 @@ import cn.edu.nju.software.util.*;
  * 
  * <p>
  * 
- * @author <a href="mailto:baonn@cs.umd.edu"> Bao Nguyen </a>
+ * @author  </a>
  */
 public class JFCRipper {
 	JFCRipperConfiguration CONFIG;

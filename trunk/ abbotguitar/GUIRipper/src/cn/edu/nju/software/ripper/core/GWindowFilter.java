@@ -26,7 +26,7 @@ import cn.edu.nju.software.ripperModuleData.GUIType;
  * 
  * An interface for window filter to filter out special window  
  * 
- * @author <a href="mailto:baonn@cs.umd.edu"> Bao Nguyen </a>
+ * @author   </a>
  */
 @Deprecated
 public abstract class GWindowFilter {
