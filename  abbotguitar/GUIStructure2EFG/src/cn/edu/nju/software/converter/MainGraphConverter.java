@@ -17,7 +17,7 @@ public class MainGraphConverter {
 
 	public static void main(String args[]){
 		System.out.println("start converting... ");
-		String GUIPath="GUITAR-Default.GUI";
+		String GUIPath="C:\\Demo.GUI";
 		MainGraphConverter converter=new MainGraphConverter(GUIPath);
 		converter.execute();
 	}

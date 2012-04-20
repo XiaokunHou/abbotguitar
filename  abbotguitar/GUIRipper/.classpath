@@ -9,6 +9,6 @@
 	<classpathentry kind="lib" path="E:/SEAN/JARS/jemmy.jar"/>
 	<classpathentry kind="lib" path="E:/SEAN/JARS/log4j-1.2.15.jar"/>
 	<classpathentry kind="lib" path="E:/SEAN/JARS/commons-cli-1.2.jar"/>
-	<classpathentry kind="lib" path="E:/SEAN/aut.jar"/>
+	<classpathentry kind="lib" path="E:/SEAN/workspace/abbotguitar/ abbotguitar/GUIRipper/Ripper/aut.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
