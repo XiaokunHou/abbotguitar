@@ -21,13 +21,13 @@ package cn.edu.nju.software.ripper.core;
 
 import java.awt.AWTException;
 import java.io.IOException;
-
 import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Set;
 
-import cn.edu.nju.software.GuitarModule.*;
+import cn.edu.nju.software.GuitarModule.GComponent;
+import cn.edu.nju.software.GuitarModule.GWindow;
 
 
 

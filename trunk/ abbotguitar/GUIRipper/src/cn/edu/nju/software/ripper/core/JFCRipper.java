@@ -34,12 +34,27 @@ import java.util.TimeZone;
 
 import org.kohsuke.args4j.CmdLineException;
 
-import cn.edu.nju.software.GuitarModule.*;
+import cn.edu.nju.software.GuitarModule.GIDGenerator;
+import cn.edu.nju.software.GuitarModule.GUITARConstants;
+import cn.edu.nju.software.GuitarModule.IO;
+import cn.edu.nju.software.GuitarModule.JFCConstants;
+import cn.edu.nju.software.GuitarModule.JFCDefaultIDGeneratorSimple;
 import cn.edu.nju.software.GuitarWrapper.AttributesTypeWrapper;
 import cn.edu.nju.software.GuitarWrapper.ComponentTypeWrapper;
-import cn.edu.nju.software.ripper.filter.*;
-import cn.edu.nju.software.ripperModuleData.*;
-import cn.edu.nju.software.util.*;
+import cn.edu.nju.software.ripper.filter.GComponentFilter;
+import cn.edu.nju.software.ripper.filter.IgnoreSignExpandFilter;
+import cn.edu.nju.software.ripper.filter.JFCTabFilter;
+import cn.edu.nju.software.ripperModuleData.AttributesType;
+import cn.edu.nju.software.ripperModuleData.ComponentListType;
+import cn.edu.nju.software.ripperModuleData.ComponentType;
+import cn.edu.nju.software.ripperModuleData.Configuration;
+import cn.edu.nju.software.ripperModuleData.FullComponentType;
+import cn.edu.nju.software.ripperModuleData.GUIStructure;
+import cn.edu.nju.software.ripperModuleData.LogWidget;
+import cn.edu.nju.software.ripperModuleData.ObjectFactory;
+import cn.edu.nju.software.util.DefaultFactory;
+import cn.edu.nju.software.util.GUIStructureInfoUtil;
+import cn.edu.nju.software.util.GUITARLog;
 
 /**
  * 
