@@ -28,7 +28,7 @@ import cn.edu.nju.software.GuitarModule.JFCXComponent;
  * 
  * Abstract class for all JFC events in GUITAR.
  * 
- * @author     </a>
+ * @author </a>
  */
 public abstract class JFCEventHandler extends GThreadEvent {
 
