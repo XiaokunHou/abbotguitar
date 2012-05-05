@@ -35,7 +35,7 @@ import cn.edu.nju.software.ripperModuleData.GUIType;
  * 
  * <p>
  * 
- * @author  </a>
+ * @author </a>
  * 
  */
 public class GUIStructureWrapper {
@@ -148,18 +148,18 @@ public class GUIStructureWrapper {
 	 */
 	public ComponentTypeWrapper getComponentFromID(String ID) {
 		ComponentTypeWrapper retComp = null;
-		
-		List<GUITypeWrapper> lGUIType= lGUI;
-		if(lGUIType==null){
-			//parseData();
-			lGUIType =new ArrayList<GUITypeWrapper>();
+
+		List<GUITypeWrapper> lGUIType = lGUI;
+		if (lGUIType == null) {
+			// parseData();
+			lGUIType = new ArrayList<GUITypeWrapper>();
 			for (GUIType gui : this.dGUIStructure.getGUI()) {
 				lGUIType.add(new GUITypeWrapper(gui));
 			}
-//			lGUIType =new ArrayList<GUITypeWrapper>();
-//			for (GUIType gui : this.dGUIStructure.getGUI()) {
-//				lGUIType.add(new GUITypeWrapper(gui));
-//			}	
+			// lGUIType =new ArrayList<GUITypeWrapper>();
+			// for (GUIType gui : this.dGUIStructure.getGUI()) {
+			// lGUIType.add(new GUITypeWrapper(gui));
+			// }
 		}
 
 		for (GUITypeWrapper wGUI : lGUIType) {
@@ -173,20 +173,18 @@ public class GUIStructureWrapper {
 	/**
 	 * Find parent of a specified component.
 	 * 
-	 * Given the ID of a specific component, find its containing
-	 * GUIType
+	 * Given the ID of a specific component, find its containing GUIType
 	 * 
-	 * @param  ID   String ID of component
-	 * @return GUITypeWrapper for parent of specified component on success
-	 *            null on failure.
+	 * @param ID
+	 *            String ID of component
+	 * @return GUITypeWrapper for parent of specified component on success null
+	 *         on failure.
 	 */
-	public GUITypeWrapper
-	getParentFromID(String ID)
-	{
+	public GUITypeWrapper getParentFromID(String ID) {
 		List<GUITypeWrapper> lGUIType = lGUI;
 
 		if (lGUIType == null) {
-			lGUIType =new ArrayList<GUITypeWrapper>();
+			lGUIType = new ArrayList<GUITypeWrapper>();
 
 			for (GUIType gui : this.dGUIStructure.getGUI()) {
 				lGUIType.add(new GUITypeWrapper(gui));
@@ -247,18 +245,18 @@ public class GUIStructureWrapper {
 		}
 	}
 
-//	/**
-//	 * Add a postfix to widget ID
-//	 * 
-//	 * @param sPostfix
-//	 */
-//	public void updateID(String sPostfix) {
-//		for (GUIType dGUI : dGUIStructure.getGUI()) {
-//			GUITypeWrapper wGUI = new GUITypeWrapper(dGUI);
-//			wGUI.updateID(sPostfix);
-//		}
-//	}
-	
+	// /**
+	// * Add a postfix to widget ID
+	// *
+	// * @param sPostfix
+	// */
+	// public void updateID(String sPostfix) {
+	// for (GUIType dGUI : dGUIStructure.getGUI()) {
+	// GUITypeWrapper wGUI = new GUITypeWrapper(dGUI);
+	// wGUI.updateID(sPostfix);
+	// }
+	// }
+
 	/**
 	 * Update widget ID
 	 * 
@@ -270,7 +268,7 @@ public class GUIStructureWrapper {
 			wGUI.updateID();
 		}
 	}
-	
+
 	/**
 	 * Generate ID for widgets based on a hashcode generator
 	 * 
@@ -282,7 +280,6 @@ public class GUIStructureWrapper {
 			wGUI.generateID(hashcodeGenerator);
 		}
 	}
-	
 
 	public ComponentTypeWrapper getComponentBySignature(AttributesType signature) {
 
@@ -341,28 +338,30 @@ public class GUIStructureWrapper {
 		}
 		return rootGUI;
 
-	}	
+	}
+
 	/**
 	 * @return
 	 */
 	public List<GUITypeWrapper> getGUIs() {
 		return this.lGUI;
 	}
-	
+
 	/**
 	 * Find the maximum widget ID. This method is used to generate ID for a new
 	 * added widget
 	 * <p>
+	 * 
 	 * @return
 	 */
-	public int getMaxID(){
-		int max =0;
-		
+	public int getMaxID() {
+		int max = 0;
+
 		for (GUIType dGUI : dGUIStructure.getGUI()) {
 			GUITypeWrapper wGUI = new GUITypeWrapper(dGUI);
-			 int iLocalMax = wGUI.getMaxID();
-			 if(max<iLocalMax)
-				 max = iLocalMax;
+			int iLocalMax = wGUI.getMaxID();
+			if (max < iLocalMax)
+				max = iLocalMax;
 		}
 		return max;
 	}
