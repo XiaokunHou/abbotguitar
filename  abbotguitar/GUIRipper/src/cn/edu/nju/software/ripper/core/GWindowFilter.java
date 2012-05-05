@@ -19,7 +19,7 @@
  */
 package cn.edu.nju.software.ripper.core;
 
-import cn.edu.nju.software.GuitarModule.*;
+import cn.edu.nju.software.GuitarModule.GWindow;
 import cn.edu.nju.software.ripperModuleData.GUIType;
 
 /**

@@ -21,7 +21,6 @@ package cn.edu.nju.software.ripper.filter;
 
 import cn.edu.nju.software.GuitarModule.GComponent;
 import cn.edu.nju.software.GuitarModule.GWindow;
-
 import cn.edu.nju.software.ripper.core.Ripper;
 import cn.edu.nju.software.ripperModuleData.ComponentType;
 
