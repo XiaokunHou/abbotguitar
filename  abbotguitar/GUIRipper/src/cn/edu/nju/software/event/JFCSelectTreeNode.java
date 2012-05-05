@@ -32,10 +32,9 @@ import javax.swing.tree.TreePath;
 import cn.edu.nju.software.GuitarModule.GComponent;
 import cn.edu.nju.software.GuitarModule.JFCConstants;
 import cn.edu.nju.software.GuitarModule.JFCXComponent;
- 
 
 /**
- * @author   Bao N. Nguyen </a>
+ * @author </a>
  * 
  */
 public class JFCSelectTreeNode extends JFCEventHandler {
@@ -51,15 +50,15 @@ public class JFCSelectTreeNode extends JFCEventHandler {
 	 * (non-Javadoc)
 	 * 
 	 * @see
-	 * cn.edu.nju.software.event.GThreadEvent#performImpl(cn.edu.nju.software.GuitarModule
-	 * .GComponent)
+	 * cn.edu.nju.software.event.GThreadEvent#performImpl(cn.edu.nju.software
+	 * .GuitarModule .GComponent)
 	 */
 	@Override
 	protected void performImpl(GComponent gComponent,
 			Hashtable<String, List<String>> optionalData) {
-		
-		if (!(gComponent instanceof JFCXComponent)){
-		
+
+		if (!(gComponent instanceof JFCXComponent)) {
+
 			System.out.println("JFCXComponent! ");
 			return;
 		}
@@ -67,7 +66,7 @@ public class JFCSelectTreeNode extends JFCEventHandler {
 		JFCXComponent jComponent = (JFCXComponent) gComponent;
 		Component component = jComponent.getComponent();
 
-		if (!(component instanceof JTree)){
+		if (!(component instanceof JTree)) {
 			System.out.println("NOT JTree! ");
 			return;
 		}
@@ -76,23 +75,22 @@ public class JFCSelectTreeNode extends JFCEventHandler {
 
 		List<String> nodes = optionalData.get(JFCConstants.TITLE_TAG);
 
-		if (nodes == null){
+		if (nodes == null) {
 			System.out.println("No option! ");
 			return;
 		}
-		
-		if (nodes.size() < 1){
+
+		if (nodes.size() < 1) {
 			System.out.println("Selecting....");
-			return;	
+			return;
 		}
-		
+
 		String node = nodes.get(0);
 		expandAll(tree, true);
-//		new EventTool().waitNoEvent(1000);
+		// new EventTool().waitNoEvent(1000);
 
 		TreePath path = tree.getNextMatch(node, 0, Position.Bias.Forward);
-		
-		
+
 		tree.setSelectionPath(path);
 
 	}
@@ -101,8 +99,8 @@ public class JFCSelectTreeNode extends JFCEventHandler {
 	 * (non-Javadoc)
 	 * 
 	 * @see
-	 * cn.edu.nju.software.event.GThreadEvent#performImpl(cn.edu.nju.software.GuitarModule
-	 * .GComponent, java.lang.Object)
+	 * cn.edu.nju.software.event.GThreadEvent#performImpl(cn.edu.nju.software
+	 * .GuitarModule .GComponent, java.lang.Object)
 	 */
 	@Override
 	protected void performImpl(GComponent gComponent, Object parameters,
@@ -113,9 +111,8 @@ public class JFCSelectTreeNode extends JFCEventHandler {
 	/*
 	 * (non-Javadoc)
 	 * 
-	 * @see
-	 * cn.edu.nju.software.event.GEvent#isSupportedBy(cn.edu.nju.software.GuitarModule.
-	 * GComponent)
+	 * @see cn.edu.nju.software.event.GEvent#isSupportedBy(cn.edu.nju.software.
+	 * GuitarModule. GComponent)
 	 */
 	@Override
 	public boolean isSupportedBy(GComponent gComponent) {

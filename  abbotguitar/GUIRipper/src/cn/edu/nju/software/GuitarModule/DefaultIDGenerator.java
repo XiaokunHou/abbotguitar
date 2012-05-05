@@ -34,7 +34,7 @@ import cn.edu.nju.software.ripperModuleData.PropertyType;
 /**
  * Default ID generator for JFC application
  * 
- * @author  </a>
+ * @author </a>
  * 
  */
 public class DefaultIDGenerator implements GIDGenerator {
@@ -52,8 +52,8 @@ public class DefaultIDGenerator implements GIDGenerator {
 	 * (non-Javadoc)
 	 * 
 	 * @see
-	 * cn.edu.nju.software.GuitarModule.GIDGenerator#genID(cn.edu.nju.software.ripperModuleData
-	 * .GUIStructure)
+	 * cn.edu.nju.software.GuitarModule.GIDGenerator#genID(cn.edu.nju.software
+	 * .ripperModuleData .GUIStructure)
 	 */
 	@Override
 	public void generateID(GUIStructure gs) {
@@ -128,7 +128,7 @@ public class DefaultIDGenerator implements GIDGenerator {
 					propagatedHashCode = prime * propagatedHashCode
 							+ ((Integer) children.indexOf(child)).hashCode();
 				}
-				
+
 				generateComponentID(child, propagatedHashCode);
 			}
 		}
@@ -141,15 +141,16 @@ public class DefaultIDGenerator implements GIDGenerator {
 	private boolean hasUniqueChildren(ComponentType component) {
 		if (!(component instanceof ContainerType))
 			return true;
-		
+
 		List<Long> examinedHashCode = new ArrayList<Long>();
-		
+
 		ContainerType container = (ContainerType) component;
-		for(ComponentType child: container.getContents().getWidgetOrContainer()){
+		for (ComponentType child : container.getContents()
+				.getWidgetOrContainer()) {
 			long hashcode = getLocalHashcode(child);
-			if(examinedHashCode.contains(hashcode)){
+			if (examinedHashCode.contains(hashcode)) {
 				return false;
-			}else{
+			} else {
 				examinedHashCode.add(hashcode);
 			}
 		}

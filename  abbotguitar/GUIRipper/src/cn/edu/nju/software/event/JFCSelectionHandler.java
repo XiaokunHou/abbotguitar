@@ -30,10 +30,9 @@ import javax.accessibility.AccessibleSelection;
 
 import cn.edu.nju.software.GuitarModule.GComponent;
 import cn.edu.nju.software.GuitarModule.JFCXComponent;
- 
 
 /**
- * @author     </a>
+ * @author </a>
  */
 public class JFCSelectionHandler extends JFCEventHandler {
 
@@ -49,12 +48,12 @@ public class JFCSelectionHandler extends JFCEventHandler {
 	/*
 	 * (non-Javadoc)
 	 * 
-	 * @see
-	 * cn.edu.nju.software.event.JEventHandler#actionPerformImp(..guitar
+	 * @see cn.edu.nju.software.event.JEventHandler#actionPerformImp(..guitar
 	 * .model.GXComponent)
 	 */
 	@Override
-	protected void performImpl(GComponent component,Hashtable<String, List<String>> optionalData) {
+	protected void performImpl(GComponent component,
+			Hashtable<String, List<String>> optionalData) {
 		// TODO Auto-generated method stub
 
 	}
@@ -62,12 +61,12 @@ public class JFCSelectionHandler extends JFCEventHandler {
 	/*
 	 * (non-Javadoc)
 	 * 
-	 * @see
-	 * cn.edu.nju.software.event.JFCEventHandler#actionPerformImp(..guitar
+	 * @see cn.edu.nju.software.event.JFCEventHandler#actionPerformImp(..guitar
 	 * .model.GXComponent, java.lang.Object)
 	 */
 	@Override
-	protected void performImpl(GComponent gComponent, Object parameters,Hashtable<String, List<String>> optionalData) {
+	protected void performImpl(GComponent gComponent, Object parameters,
+			Hashtable<String, List<String>> optionalData) {
 
 		if (parameters instanceof List<?>) {
 			List<String> lParameter = (List<String>) parameters;
@@ -128,30 +127,32 @@ public class JFCSelectionHandler extends JFCEventHandler {
 		// aSelection.
 	}
 
-	/* (non-Javadoc)
-	 * @see cn.edu.nju.software.event.GEvent#isSupportedBy(cn.edu.nju.software.GuitarModule.GComponent)
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see cn.edu.nju.software.event.GEvent#isSupportedBy(cn.edu.nju.software.
+	 * GuitarModule.GComponent)
 	 */
 	@Override
 	public boolean isSupportedBy(GComponent gComponent) {
-		
-		
+
 		if (!(gComponent instanceof JFCXComponent))
 			return false;
 		GEvent gFilterEvent;
-		gFilterEvent= new JFCActionHandler();
+		gFilterEvent = new JFCActionHandler();
 		if (gFilterEvent.isSupportedBy(gComponent))
 			return false;
-		
+
 		JFCXComponent jComponent = (JFCXComponent) gComponent;
 		Component component = jComponent.getComponent();
 		AccessibleContext aContext = component.getAccessibleContext();
-		if (aContext==null)
+		if (aContext == null)
 			return false;
-		
+
 		Object event = aContext.getAccessibleSelection();
 		if (event != null)
 			return true;
-		
+
 		return false;
 	}
 }
