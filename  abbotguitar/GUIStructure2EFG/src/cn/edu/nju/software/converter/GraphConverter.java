@@ -21,12 +21,7 @@ package cn.edu.nju.software.converter;
 
 /**
  * The common interface for graph converter
- * 
- * <p>
- * 
- * @author <a href="mailto:charlie.biger@gmail.com"> Charlie BIGER </a>
- * @author <a href="mailto:baonn@cs.umd.edu"> Bao N. Nguyen </a>
- * 
+ *  
  * @version 1.0
  * 
  */
