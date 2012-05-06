@@ -9,27 +9,8 @@ import cn.edu.nju.software.GuitarWrapper.*;
 import cn.edu.nju.software.ripperModuleData.*;
 
 
-//import edu.umd.cs.guitar.model.GUITARConstants;
-//import edu.umd.cs.guitar.model.data.EFG;
-//import edu.umd.cs.guitar.model.data.EventGraphType;
-//import edu.umd.cs.guitar.model.data.EventType;
-//import edu.umd.cs.guitar.model.data.EventsType;
-//import edu.umd.cs.guitar.model.data.GUIStructure;
-//import edu.umd.cs.guitar.model.data.ObjectFactory;
-//import edu.umd.cs.guitar.model.data.RowType;
-//import edu.umd.cs.guitar.model.wrapper.ComponentTypeWrapper;
-//import edu.umd.cs.guitar.model.wrapper.EventWrapper;
-//import edu.umd.cs.guitar.model.wrapper.GUIStructureWrapper;
-//import edu.umd.cs.guitar.model.wrapper.GUITypeWrapper;
-//import edu.umd.cs.guitar.util.GUITARLog;
-
 /**
  * Gui Structure to Event Flow Graph converter
- * 
- * <p>
- * 
- * @author <a href="mailto:charlie.biger@gmail.com"> Charlie BIGER </a>
- * @author <a href="mailto:baonn@cs.umd.edu"> Bao N. Nguyen </a>
  * 
  * @version 1.1
  */
