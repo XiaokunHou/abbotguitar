@@ -38,7 +38,7 @@ public class EFGConverter implements GraphConverter {
    /*
     * (non-Javadoc)
     * 
-    * @see edu.umd.cs.guitar.graph.plugin.GraphConverter#getInputType()
+    * @see cn.edu.nju.software.guitar.graph.plugin.GraphConverter#getInputType()
     */
    public Class<?> getInputType() {
       return GUIStructure.class;
@@ -57,7 +57,7 @@ public class EFGConverter implements GraphConverter {
     * (non-Javadoc)
     * 
     * @see
-    * edu.umd.cs.guitar.graph.plugin.GraphConverter#generate(java.lang.Object)
+    * cn.edu.nju.software.guitar.graph.plugin.GraphConverter#generate(java.lang.Object)
     */
    public Object generate(Object obj) throws InstantiationException {
       if (!(obj instanceof GUIStructure)) {
