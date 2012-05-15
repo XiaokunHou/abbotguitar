@@ -7,7 +7,7 @@ import cn.edu.nju.software.ripperModuleData.*;
 
 public class MainGraphConverter {
 	public String GUI_FILE = "GUITAR-Default.GUI";
-	public String EFG_FILE = "GUITAR-Default.EFG";
+	public String EFG_FILE = "C:\\GUITAR-Default34.EFG";
 	public String PLUGIN="EFGConverter";
 	public String MAP_FILE;
 	public MainGraphConverter(String gUIPath) {
@@ -17,7 +17,7 @@ public class MainGraphConverter {
 
 	public static void main(String args[]){
 		System.out.println("start converting... ");
-		String GUIPath="C:\\Demo.GUI";
+		String GUIPath="E:\\SEAN\\workspace\\abbotguitar\\ abbotguitar\\GUIRipper\\Ripper\\Demo.GUI";
 		MainGraphConverter converter=new MainGraphConverter(GUIPath);
 		converter.execute();
 	}
