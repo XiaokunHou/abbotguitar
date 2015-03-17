@@ -1,0 +1,1 @@
+Java GUI Automation Test.Create the script automatically, To do automation test. Based on abbot framework.
